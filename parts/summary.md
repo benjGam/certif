@@ -3,13 +3,13 @@
 - <a href='./project-pres.md'>Présentation du Client</a>
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
   - <a href='./project-pres.md#team'>L'équipe en charge</a>
-- Gestion du projet
+- <a href='./project-management.md'>Gestion du projet</a>
   - Methodologie de travail
-    - SCRUM
+    - <a href='./project-management.md#scrum'>SCRUM</a>
   - Environnement et outils de travail
-    - GitHub
-    - GitFlow
-    - Jira
+    - <a href='./project-management.md#jira'>Jira</a>
+    - <a href='./project-management.md#github'>GitHub</a>
+    - <a href='./project-management.md#gitflow'>GitFlow</a>
 - Spécification fonctionnelles
   - Récolte du besoin client
   - Règles de gestion

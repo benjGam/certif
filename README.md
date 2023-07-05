@@ -16,7 +16,7 @@ Avant d'entrer en formation de CDA j'étais un simple développeur isolé qui fa
 
 BOUREZ Bastien est un jeune développeur très débrouillard et particulièrement à l'affut des nouvelles technologies
 
-PHILIPPE Nelson est un jeune développeur fort de plusieurs années de développement à son compte pour des missions de Freelancing notamment, il est aussi un atout pour notre équipe dans ses connaissances quant aux technologies du Web
+PHILIPPE Nelson est un jeune développeur fort de plusieurs années de développement pour des missions de Freelancing notamment, il est aussi un atout pour notre équipe dans ses connaissances quant aux technologies du Web
 
 LEROY Cédric est un développeur qui a rejoint le monde du développement récemment, il est un atout pour notre équipe en qualité de rédacteur ainsi que dans sa façon de voir le développement, il apporte des points de vus intéressant quant à la réalisation de certaines fonctionnalités.
 
@@ -58,6 +58,7 @@ En effet, chaque équipe Simplon HDF utilise des canaux différent pour communiq
 - etc..
 
 Ce qui fait que chaque membre de ces équipes doit avoir plusieurs outils de communication, ce qui créer donc une multiplicité d'outils qui polluent le temps de travail de chacun des membres des équipes Simplon.
+
 De plus, chaque formateurs, apprenants, Caps se retrouve avec plusieurs serveur Discord différent pour communiquer, pour un formateur par exemple, cela représente 1 Serveur Discord par promotion dont il à la charge, cela polluent grandement l'espace de travail des formateurs et n'est pas optimisé quant à la recherche des serveurs dédiés à leurs promotions.
 En plus d'avoir des serveurs Discord pour les discussions internes aux équipes Simplon.
 
@@ -285,7 +286,8 @@ Nous avons donc établis les règles de gestion pour ce projet, les voici :
 
 #### RBAC (Role Based Access Control)
 
-Nous avons aussi établi un RBAC qui permettra de définir les autorisations selon des rôles : 
+Nous avions aussi établi un RBAC qui permettra de définir les autorisations des utilisateurs selon des rôles : 
+Nous avions besoin de restreindre les permissions des Apprenants et d'au contraire donner de plus en plus de permissions aux membres du Staff, voici le RBAC que nous avons créer pour ce projet :
 
 | Permissions                                                   	| Administrateur 	| Directeur 	| Staff Simplon 	| Campus-manager 	| Caps 	| Formateur 	| Bots discord 	| Apprenant 	| Formation rôle 	| Promotion rôle 	| Développeur 	| Alumnis 	| Nouvel Arrivant 	| Everyone 	|
 |---------------------------------------------------------------	|:--------------:	|:---------:	|:-------------:	|:--------------:	|:----:	|:---------:	|:------------:	|:---------:	|:--------------:	|:--------------:	|:-----------:	|:-------:	|:----:	|:--------:	|
@@ -599,7 +601,290 @@ LEROY Cédric qui a lui aussi le rôle de développeur.
 
 ##### Jira
 
+Jira est un outil collaboratif en ligne, il permet d'organiser les tâches à effectuer lors d'un projet.
+On peut découper les tâches :
+
+- En Epic qui sont des grosses taches qu'on découpera alors en 
+- User Story pour préciser un peu plus les tâches à réaliser pour cette Epic
+- En tâches, les taches sont les plus petites unités de découpage, elle permette de détailler chaque User Story.
+
 Pour organiser les taches inérantes à ce projet, nous avons choisi la solution Jira qui propose une organisation professionnelle.
 Il permet de créer des Epics, des User-Storys, ainsi que des taches, ce qui permet de découper clairement les tâches à effectuer et à les assigner à l'un des membres de l'équipe.
 
 Ce qui permet d'être organisé lors de la réalisation des tâches.
+
+#### Backend
+
+...
+
+##### API
+
+...
+
+###### Conception
+
+... 
+
+###### Sécurité
+
+...
+
+##### Base de donnée
+
+...
+
+###### Conception
+
+###### Dictionnaire de donnée
+
+Le Dictionnaire de donnée définit toutes les entrées qui doivent être utilisés dans une base de donneé, chaque entrée du dictionnaire de donnée se compose d'un nom, d'un type et d'une description.
+
+De cette façon, il est possible de lister toutes les clés de la base de données avant de commencer le MCD, pendant la création du dictionnaire de donnée, il faut réfléchir à l'application de façon globale afin de s'assurer que la persistance de toutes données utiles sera mise en place.
+
+Voici le Dictionnaire de donnée pour ce projet : 
+
+###### MCD
+
+Le modèle conceptuel de donnée est un diagramme du langage Merise, permettant de conceptualiser et de visualiser les données stockées en base de donnée qui ont étés définis dans le dictionnaire de donnée.
+
+Voici le MCD pour ce projet : 
+
+INSERIEZ MCD
+
+###### MPD 
+
+Voici le Modèle Physique de Donnée :
+
+INSEREZ MPD
+
+###### MLD
+
+Voici le Modèle Logique de Donnée : 
+
+INSEREZ MLD
+
+###### Sécurité
+
+...
+
+###### RGPD
+
+...
+
+###### UUID
+
+...
+
+###### Politique des mots de passe
+
+...
+
+###### Chiffrement des mots de passe
+
+...
+
+##### Conception du Bot
+
+Le Bot d'Onboarding doit permettre de gérer de façon globale l'import d'un éco-système de Centre de Formation au sein d'un seul et unique serveur Discord, dans cette optique, le Bot doit permettre d'accueillir de nouveaux membres internes ou externes au Centre de Formation.
+
+Il doit permettre de définir qu'un utilisateur est un Apprenant ou un Membre des différentes équipes du Centre de Formation de la façon la plus simple possible, pour permettre l'accueil des différentes promotions, le Bot doit mettre à disposition un espace dédié à une promotion.
+
+Aussi, le Bot doit permettre la création de nouvelles formations ainsi que la création de nouvelles promotions de façon la plus simple possible, il doit aussi permettre aux membres concernés de consulter ces différents espaces si nécessaire tout en conservant une navigation fluide au sein du serveur Discord
+
+Pour le bot d'Onboarding développé par notre équipe, une conception à été faite, nous avons conceptualisé le bot d'Onboarding et tous les autres par :
+
+- Des diagrammes de cas d'utilisation (Use Case)
+- Des diagrammes d'activités (Activity)
+- Des diagrammes de séquence (Sequence)
+- Des diagrammes de classes
+
+Le diagramme de cas d'utilisation est un diagramme ayant pour but de conceptualiser la façon dont les différents acteurs intéragissent avec un ou plusieurs systèmes.
+
+Le diagramme d'activité décrit le flux des interactions avec ce système et ces sous-systèmes, dans notre cas, le bot et les systèmes connexes
+
+Le diagramme de séquence à pour vocation de délivrer des informations très détaillés quant aux séquences rencontrées dans un système en l'occurence le bot, avec le diagramme de séquence il est important de détaillant chaque étape des différentes séquences aifn de pouvoir établir la logique de l'application
+
+Le diagramme de classe est un diagramme permettant de voir les différentes classes qui composeront un système, il permet de structurer le code future au sein de classe afin d'assurer l'atomicité du code, il est un des aspects fondamentaux à la conception d'une application complexe car grace à lui, il est facile de visualiser l'architecture du code et les relations entre les différentes classes de l'application.
+
+###### Diagramme de cas d'utilisation
+
+Le diagramme de cas d'utilisation représente les cas d'utilisation possibles d'une application de façon générale et très peu détaillée : 
+
+<img src='assets/usecase/use-case.jpg'/>
+
+Dans ce présent diagramme :
+
+L'administrateur (représenté ici par **Administrator**) peut configurer le **Bot** ce qui implique que le **Bot** modifie sa configuration.
+
+Un nouveau membre (représenté ici par **New Member**) peut rejoindre le serveur ce qui implique que le **Bot** lui attribut un rôle par défaut,
+aussi, il est possible que le **Bot** ait généré un lien d'invitation auquel il a associé un rôle à attribué à l'utilisateur.
+Aussi, le nouveau membre peut ou doit s'identifier selon le lien d'invitation avec lequel il a rejoint le serveur **Discord**.
+
+Le nouveau membre peut poster des messages dans les canaux globaux, et il peut poster des messages dans les canaux liés à son rôle ce qui implique,
+qu'il se soit identifié.
+
+Le CAP peut confirmer les demandes d'identification des nouveaux membres, ce qui implique que le **Bot** doivent redéfinir le pseudo du nouvel utilisateur,
+le cap peut aussi créer un nouveau type de formation, il peut créer une nouvelle promotion, il doit pour cela assigner au moins un formateur à la promotion, pour créer une nouvelle promotion le **Bot** doit créer un espace dédié à la promotion.
+
+Le CAP peut aussi mettre fin à un promotion en cours, ce qui implique que le **Bot** doit déplacer la catégorie liée à la promotion vers une zone d'archivage,
+le cap peut aussi ajouter ou supprimer un apprenant d'une promotion.
+Il peut aussi selectionner les promotions qu'il veut consulter ce qui implique que le **Bot** doit ajouter ou retirer un rôie au **CAP**.
+
+Le formateur (représenté ici par **Trainer**) peut quant à lui consulter l'espace dédié à sa promotion et y discuter librement.
+L'apprenant (représenté ici par **Learner**) peut lui aussi consulter son espace de formation et y discuter librement.
+
+######  Diagramme d'activités 
+
+Le diagramme d'activités représente les différentes activités d'une application de façon générale et peu détaillée, il est conçu à partir du <a href='#usecase-diagram'>**diagramme de cas d'utilisation**</a>
+
+- Création de formation <a id='activities-course-creation'></a>
+
+<img src='assets/activities/course-creation.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lors de la création d'une nouvelle formation : 
+
+Un **CAP** rejoint le canal dédié à la création d'une formation, **Discord** affiche donc un bouton afin de d'afficher au **CAP** une interface de création de formation.
+Le **CAP** clique sur le bouton et entre les différentes caractéristiques de la formation puis valide la demande de création d'une formation.
+Le **Bot** vérifie les informations entrées par le **CAP**, si une erreur est detectée, il le notifie au **CAP**, sinon il récupère les IDs des canaux globaux prévus pour servir de canaux de templates, puis il créer un template de formation.
+Enfin **Discord** va notifier le succès de la création de la formation au **CAP**
+
+- Création d'une nouvelle promotion 
+
+<img src='assets/activities/class-creation.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lors de la création d'une nouvelles promotions :
+
+Un **CAP** rejoint le canal dédié à la création d'une promotion, **Discord** affiche donc un bouton afin de donner au **CAP** une interface de création de promotion.
+Le **CAP** clique sur le bouton et entre les différentes caractéristiques de la promotion puis valide la demande de création de promotion.
+Le **Bot** vérifie les informations entrées par le **CAP**, si une erreur est detectée, il le notifie au **CAP¨**, sinon le **Bot** récupère le template du type de formation,
+puis il créer un rôle de promotion ainsi qu'une catégorie (un espace) dédié à la promotion à laquelle il lie un lien d'invitation.
+Il attribue le rôle de promotion au **CAP** qui a crée la promotion.
+Alors **Discord** applique le template de formation à la catégorie de la promotion et lie le rôle de promotion à la catégorie.
+Ensuite le **Bot** va lié le rôle de promotion à chaque apprenant.
+Enfin **Discord** va notifier le succès de la création de la promotion au **CAP**
+
+- Utilisateur rejoignant le serveur
+
+<img src='assets/activities/user-join.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lorsce qu'un **nouvel utilisateur** rejoint le serveur **Discord**
+
+Le **Nouvel utilisateur** clique sur le lien d'invitation
+**Discord** récupère une demande d'entrer sur le serveur, il met alors à jour sa liste de membres.
+Le **Bot** vérifie alors le lien d'invitation afin de determiner si le lien à un rôle associé ou non, si le lien n'a pas de rôle associé alors il attribue le rôle **Invité**
+sinon, **Discord** affiche un formulaire sous forme de Pop-up afin de permettre au **Nouvel utilisateur** de s'identifier, à l'issue du remplissage de ce formulaire d'identification, le **Bot** envoi un message dans le canal dédié aux vérifications d'identités puis **Discord** affiche le message et envoi un message afin de notifier la prise en compte de sa demande d'identification au **Nouvel utilisateur**.
+Enfin **Discord** attribue le rôle **Invité** au **Nouvel utilisateur** le temps que la demande d'identification de ce dernier soit acceptée.
+
+- Consultation des demandes d'identifications
+
+<img src='assets/activities/identification-request-verification.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lorsce qu'un **CAP** veut consulter valider ou refuser une demande d'identification
+
+Le **CAP** rejoint le canal prévu à cet effet, **Discord** renvoi alors toutes les demandes d'identifications des **nouveaux utilisateurs**.
+Le **CAP** clique alors sur l'un des deux boutons (**Accepter** ou **Refuser**).
+Le **Bot** analyse si le **CAP** à cliquer sur **Accepter**, alors, il attribue le rôle associé au lien d'invitation avec lequel l'utilisateur à rejoint le serveur **Discord** et notifie le **nouvel utilisateur** que sa demande d'identification à été acceptée.
+Si le **CAP** à cliquer sur le bouton **Refuser** il notifie simplement au **nouvel utilisateur** que sa demande d'identification à été refusée.
+Enfin **Discord** passe la demande d'identification en état **Fermée** afin de désactiver les intéractions avec la demande d'identification.
+
+- Selection des promotions à afficher ou non 
+
+<img src='assets/activities/select-class-to-show-hide.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lorsce qu'un **CAP** veut selectionner une promotion à voir ou non
+
+Le **CAP** rejoint le canal prévu à cet effet, **Discord** affiche alors un bouton sur lequel le **CAP** clique.
+Le **Bot** analyse si le **CAP** s'est affilié à une **Fabrique** lors de son identification, si c'est le cas,
+le **Bot** récupère toutes les promotions affiliées à la **Fabrique**, si ce n'est pas le cas alors il récupère,
+toutes les promotions en cours puis demande à **Discord** d'afficher un bouton pour chaque promotion récupérée.
+
+Le **CAP** clique sur le bouton d'une promotion, le **Bot** vérifie alors si le **CAP** a déjà le rôle de la
+promotion, si c'est le cas, il lui retire ce qui a pour effet de désactiver l'affichage de l'espace de promotion.
+Si ce n'est pas le cas, le **Bot** ajoute le rôle de la promotion au **CAP** ce qui a pour effet d'afficher
+l'espace de promotion.
+
+- Configuration du bot par un **Administrateur** 
+  
+<img src='assets/activities/administrator-configure-bot.jpg'/>
+
+Ce présent diagramme décrit les activités possibles lorsce qu'un **Administrateur** veut configurer le bot
+
+**L'administrateur** tape une commande dans un canal (peu importe le quel), **Discord** transmet la commande au **Bot**,
+Le **Bot** vérifie la commande entrée, s'il s'agit d'une commande pour modifier le canal pour la création des promotions, alors il modifie cette entrée dans sa configuration
+sinon, il modifie l'entrée pour la création de formation.
+Ensuite **Discord** nettoie le précedent canal et affiche l'interface liée à la commande dans le canal spécifié dans la commande.
+Enfin **Discord** affiche un message de succès à **l'administrateur**
+
+###### Diagramme de séquences
+
+Le diagramme de séquence représente les différentes activités d'une application de façon très détaillée, il est conçu à partir du <a href='#activities-diagram'>**diagramme d'activités**</a>
+
+- Création d'une nouvelle formation  
+
+<img src='assets/sequences/course-creation.jpg'/>
+
+- Création d'une nouvelle promotion 
+
+<img src='assets/sequences/class-creation.jpg'/>
+
+- Utilisateur rejoignant le serveur 
+
+<img src='assets/sequences/user-join.jpg'/>
+
+- Consultation des demandes d'identifications 
+
+<img src='assets/sequences/identification-request-verification.jpg'/>
+
+- Selection des promotions à afficher ou non 
+
+<img src='assets/sequences/select-class-to-show-hide.jpg'/>
+
+- Configuration du bot par un **Administrateur** 
+
+<img src='assets/sequences/administrator-configure-bot.jpg'/>
+
+###### Diagramme de classes <a id='classes-diagram'></a>
+
+<img src='assets/classes/classes.jpg'/>
+
+Dans ce diagramme nous avons une classe nommé **Config** qui est utile afin de configurer le **Bot**, elle compose la classe **Guild**
+qui représente le **Serveur Discord** qui aggrege une la classe **Course** qui représente une formation.
+
+La classe **CategoryTemplate** compose cette même classe **Course** et représente la façon dont doit-être agencé une **catégorie Discord** selon son type de **Course** (Formation)
+La classe **Course** représente une formation
+La classe **ClassCategory** compose la classe **CategoryTemplate** et est l'instanciation de la classe **CategoryTemplate**
+La classe **ClassCategory** aggrère la classe **ClassChannel** qui est  l'instanciation des canaux pour la promotion
+La classe **ClassChannel** généralise (hérite) de la classe **Channel** qui est la représentation d'un **canal Discord**
+La classe **Permission** compose la classe **Channel**, cette classe permet de définir les permissions des différents rôles selon le **canal Discord**
+La classe **ClassCategory** compose la classe **Class** qui représente une promotion dans son ensemble
+La classe **ClassRole** compose elle aussi la classe **Class**, elle représente le rôle associé à chaque promotion
+La classe **ClassRole** est associé à la classe **IdentifiedUser** qui représente un utilisateur identifié sur le **serveur Discord**
+La classe **IdentifiedUser** généralise (hérite) **User** qui représente un utilisateur lambda
+
+###### Sécurite du Bot Onboarding
+
+Pour la sécurité du Bot, Discord met nativement en place un système d'authentification avec JWT (JSON Web Token) qui permet d'authentifier un système ou un utilisateur selon le contexte, de cette façon, Discord s'assure qu'une entité communiquant avec son API est authentifié.
+
+De plus, le Bot d'Onboarding est déployé sur un serveur différent de l'API au sein d'un conteneur Docker, ce qui fait que si le Bot devenait vulnérable, les attaquants ne serait en mesure d'affecter les performances ou le comportement uniquement du Bot, et non pas du reste du Back-End, comme l'API qui est un point sensible en terme d'accès aux données.
+
+Le Bot d'Onboarding est en quelques sortes isolés car il est exposé aux utilisateurs et donc plus vulnérables que l'API qui n'est exposé qu'aux Bots.
+
+##### Deploiement du Back-End
+
+###### Docker
+
+Docker est un système permettant de créer des conteneurs afin d'éxecuter des environnements d'éxecution voire des systèmes d'exploitation.
+
+Un conteneur docker est à l'instar d'une machine virtuelle, complétement isolé de l'environnement d'éxecution hôte.
+Un conteneur n'est PAS une machine virtuelle ! 
+Pour expliquer brièvement ce qu'est un conteneur Docker un schéma vaudra mieux que des mots : 
+
+![](imgs/Docker%20VS%20VM.png)
+
+Dans ce schéma, on peut voir que les conteneurs Docker utilisent le système Hôte, le système utilisé pour lancer Docker, notez qu'il est techniquement possible de lancer un conteneur Docker avec un système d'exploitation différent de celui de l'hôte, mais que cela n'est pas recommandé en plus d'être inadapté pour les conteneurs.
+
+Un conteneur puis-ce qu'il n'utilise pas de système d'exploitation différent de celui de l'hôte ne pèsent presque rien en comparaison d'une machine virtuelle qui doit elle s'occuper de maintenir un système d'exploitation, ce qui influe directement sur l'allocation des ressources.
+
+Un conteneur Docker est un environnement dans lequel un développeur va installer certains environnement d'execution utile au programme qu'il cherche à executer, dans notre cas, nous avons des conteneurs avec l'environnement NodeJS en guise d'image de base, afin de permettre l'execution de notre application dans des conteneurs.
+
+Nous avons choisi de conteneuriser chaques modules de l'application afin de permettre un déploiement simple et fluide, aussi, grace à Docker nous isolons chaque module dans des environnements d'execution différents.

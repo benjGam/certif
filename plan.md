@@ -12,7 +12,7 @@
   ## Pres Projet
   - Intro
 
-  ### Spé Foncd
+  ### Spé Fonc
     - Recoltes des besoins client
       - Analyse des problèmatiques
         - Solutions
@@ -31,7 +31,6 @@
         - GitHub Actions (Succint)
       - Mise en place methodologie Agile
         - Scrum
-         - Mise en place Rituels
          - Définition des roles
         - Jira (! RECTIFIER JIRA)
 
@@ -55,7 +54,6 @@
       - Politique mot de passe
       - UUID
       - Chiffrement mot de passe
-
 
 ## Bot
   ### Conception du Bot
