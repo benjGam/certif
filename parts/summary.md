@@ -1,8 +1,8 @@
 - Résumé
 - <a href='./self-pres.md'>Présentation Personnelle</a>
-- Présentation du Client
-  - Contextualisation du projet
-  - L'équipe en charge
+- <a href='./project-pres.md'>Présentation du Client</a>
+  - <a href='./project-pres.md#context'>Contextualisation du projet</a>
+  - <a href='./project-pres.md#team'>L'équipe en charge</a>
 - Gestion du projet
   - Methodologie de travail
     - SCRUM
