@@ -10,10 +10,10 @@
     - <a href='./project-management.md#jira'>Jira</a>
     - <a href='./project-management.md#github'>GitHub</a>
     - <a href='./project-management.md#gitflow'>GitFlow</a>
-- Spécification fonctionnelles
-  - Récolte du besoin client
-  - Règles de gestion
-  - RBAC
+- <a href='./func-spec.md'>Spécification fonctionnelles</a>
+  - <a href='./func-spec.md#client'>Récolte du besoin client</a>
+  - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
+  - <a href='./func-spec.md#rbac'>RBAC</a>
 - Spécification Technique
   - Listing des User Storys les plus représentatives du projet
   - Choix de la stack

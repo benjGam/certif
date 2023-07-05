@@ -1,6 +1,6 @@
 # Spécifications fonctionnelles
 
-## Recueil du besoin client
+## Recueil du besoin client <a id='client'></a>
 
 Pour recueillir les besoins du client, notre équipe a d'abord discuté avec les différents membres des équipes Simplon.
 Suite à ces discussions, nous avons été en mesure d'établir une liste des problèmes les plus fréquemment rencontrés par les membres des équipes Simplon.
@@ -78,7 +78,7 @@ Certains membres des équipes Simplon nous ont interpellés quant à la perte de
 
 Les membres ont également signalé des problèmes de sourcing. Selon eux, il est relativement compliqué de remplir les promotions avec des profils correspondant aux critères de ces promotions.
 
-## Règles de gestion
+## Règles de gestion <a id='gestion-rules'></a>
 
 Les règles de gestion sont une suite de règles que les membres d'une équipe définissent pour répartir les possibilités et les devoirs des entités constituant un système. Suite au recueil des besoins du client, notre équipe a établi les règles de gestion du projet.
 
@@ -114,7 +114,7 @@ Les règles de gestion sont une suite de règles que les membres d'une équipe d
     - Une fois l'identité vérifiée, le rôle doit être attribué par le bot à l'utilisateur du lien.
 - Le bot doit mettre en place un embed (dans un canal) permettant de sélectionner les formations visibles pour le staff.
 
-## RBAC (Role Based Access Control)
+## RBAC (Role Based Access Control) <a id='rbac'></a>
 
 Le RBAC est un système conceptuel qui suit le principe du moindre privilège en matière de sécurité. Grâce au RBAC, il est possible de définir les permissions des utilisateurs d'un système en fonction de leur rôle, un rôle étant lui-même défini par d'autres critères tels que les fonctions et les tâches d'un utilisateur, par exemple.
 
