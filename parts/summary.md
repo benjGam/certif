@@ -1,5 +1,5 @@
 - Résumé
-- Présentation Personnelle
+- <a href='./self-pres.md'>Présentation Personnelle</a>
 - Présentation du Client
   - Contextualisation du projet
   - L'équipe en charge
