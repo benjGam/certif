@@ -17,9 +17,10 @@
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
-    - Benchmarks
     - Choix de l'application Utilisateur
+    - Benchmarks
     - Choix langage
+    - Choix de l'environnement d'éxecution
     - Choix Framework Back
     - Choix Framework Front
   - GitHub
