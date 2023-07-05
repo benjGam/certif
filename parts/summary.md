@@ -1,0 +1,53 @@
+- Résumé
+- Présentation Personnelle
+- Présentation du Client
+  - Contextualisation du projet
+  - L'équipe en charge
+- Gestion du projet
+  - Methodologie de travail
+    - SCRUM
+  - Environnement et outils de travail
+    - GitHub
+    - GitFlow
+    - Jira
+- Spécification fonctionnelles
+  - Récolte du besoin client
+  - Règles de gestion
+  - RBAC
+- Spécification Technique
+  - Listing des User Storys les plus représentatives du projet
+  - Choix de la stack
+  - GitHub
+    - Choix de l'architecture du projet
+    - GitFlow VS Fork
+    - Conventions de nommage des commits (Angular Style)
+    - GitHub Actions (Explication brève)
+  - Mise en place de la méthodologie de travail
+    - SCRUM
+      - Définition des rôles
+    - Jira
+  - Solution Techniques
+    - Le Back-End
+      - La base donnée
+      - Conception
+        - Merise
+          - MCD
+          - MPD
+          - MLD
+        - Sécurisation
+          - Politique des mots de passe
+          - Chiffrement des mots de passe
+          - UUID
+      - L'API
+        - Conception (Aucune expliquer pourquoi, les délais, la livraison)
+        - La sécurisation
+          - JWT (JSON Web Token)
+      - Le Bot Onboarding
+        - Conception
+          - UML
+            - Use case
+            - Activités
+            - Séquences
+            - Classe
+          - Sécurisation
+            - JWT (JSON Web Token)
