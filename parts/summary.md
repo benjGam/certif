@@ -3,7 +3,7 @@
 - <a href='./project-pres.md'>Présentation du Client</a>
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
     - <a href='./func-spec.md#client'>Récolte du besoin client</a> à fusionner avec la contextualisation
-      - Proposition de solution (NE PAS FAIRE DE BENCHMARK)
+      - Proposition de solution (NE PAS FAIRE DE BENCHMARK) (Discord VS Slack VS FROM SCRATCH)
   - <a href='./project-pres.md#team'>L'équipe en charge</a>
 - <a href='./project-management.md'>Gestion du projet</a>
   - Methodologie de travail
@@ -19,9 +19,7 @@
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
-    - Analyse comparative des stacks (Benchmark à ne pas utiliser)
-      - 
-    - Quel type de solution
+    - Analyse comparative des stacks (Benchmark)
     - Choix Framework Back
     - Choix Framework Front
   - GitHub
