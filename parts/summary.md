@@ -2,25 +2,26 @@
 - <a href='./self-pres.md'>Présentation Personnelle</a>
 - <a href='./project-pres.md'>Présentation du Client</a>
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
+    - <a href='./func-spec.md#client'>Récolte du besoin client</a> à fusionner avec la contextualisation
+      - Proposition de solution (NE PAS FAIRE DE BENCHMARK)
   - <a href='./project-pres.md#team'>L'équipe en charge</a>
 - <a href='./project-management.md'>Gestion du projet</a>
   - Methodologie de travail
     - <a href='./project-management.md#scrum'>SCRUM</a>
   - Environnement et outils de travail
+    - <a href=''>Versionning</a>
+      - <a href='./project-management.md#git'>Git</a>
+      - <a href='./project-management.md#gitflow'>GitFlow</a>
+      - <a href='./project-management.md#github'>GitHub</a>
     - <a href='./project-management.md#jira'>Jira</a>
-    - <a href='./project-management.md#github'>GitHub</a>
-    - <a href='./project-management.md#gitflow'>GitFlow</a>
 - <a href='./func-spec.md'>Spécification fonctionnelles</a>
-  - <a href='./func-spec.md#client'>Récolte du besoin client</a>
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
-  - <a href='./func-spec.md#rbac'>RBAC</a>
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
-    - Choix de l'application Utilisateur
-    - Benchmarks
-    - Choix langage
-    - Choix de l'environnement d'éxecution
+    - Analyse comparative des stacks (Benchmark à ne pas utiliser)
+      - 
+    - Quel type de solution
     - Choix Framework Back
     - Choix Framework Front
   - GitHub
@@ -35,18 +36,19 @@
   - Solution Techniques
     - Le Back-End
       - La base donnée
-      - Conception
-        - Merise
-          - MCD
-          - MPD
-          - MLD
-        - Sécurisation
-          - Politique des mots de passe
-          - Chiffrement des mots de passe
-          - UUID
+        - Conception
+          - Merise
+            - MCD
+            - MPD
+            - MLD
+        - Sécurisation de la base de donnée
       - L'API
         - Conception (Aucune expliquer pourquoi, les délais, la livraison)
         - La sécurisation
+          - <a href='./func-spec.md#rbac'>RBAC</a>
+          - Moindre privilège
+          - Défense en profondeur
+          - Réduction surface d'attaque
           - JWT (JSON Web Token)
       - Le Bot Onboarding
         - Conception
