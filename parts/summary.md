@@ -17,6 +17,11 @@
 - Spécification Technique
   - Listing des User Storys les plus représentatives du projet
   - Choix de la stack
+    - Benchmarks
+    - Choix de l'application Utilisateur
+    - Choix langage
+    - Choix Framework Back
+    - Choix Framework Front
   - GitHub
     - Choix de l'architecture du projet
     - GitFlow VS Fork
