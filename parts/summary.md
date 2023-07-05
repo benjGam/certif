@@ -15,7 +15,7 @@
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
   - <a href='./func-spec.md#rbac'>RBAC</a>
 - Spécification Technique
-  - Listing des User Storys les plus représentatives du projet
+  - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
     - Benchmarks
     - Choix de l'application Utilisateur
