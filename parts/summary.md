@@ -7,9 +7,9 @@
       - Proposition de solution
 - <a href='./project-management.md'>Gestion du projet</a>
   - Methodologie de travail et Outils
-      - SCRUM
-        - Définition des rôles
-      - Jira
+      - <a href='./project-management.md#scrum'>SCRUM</a>
+        - <a href='./project-management.md#définition-des-rôles'>Définition des rôles</a>
+      - <a href='./project-management.md#jira'>Jira</a>
     - <a href='./project-management.md#versionning'>Versionning</a>
       - <a href='./project-management.md#git'>Git</a>
         - <a href='./project-management.md#gitflow'>GitFlow</a>
