@@ -16,6 +16,7 @@
     - <a href='./project-management.md#jira'>Jira</a>
 - <a href='./func-spec.md'>Spécification fonctionnelles</a>
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
+  - <a href='./rbac.md'>RBAC</a>
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
