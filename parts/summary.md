@@ -2,9 +2,9 @@
 - <a href='./self-pres.md'>Présentation Personnelle</a>
 - <a href='./project-pres.md'>Présentation du Client</a>
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
-    - <a href='./func-spec.md#client'>Récolte du besoin client</a> à fusionner avec la contextualisation
-      - Proposition de solution (NE PAS FAIRE DE BENCHMARK) (Discord VS Slack VS FROM SCRATCH)
-  - <a href='./project-pres.md#team'>L'équipe en charge</a>
+    - <a href='./project-pres#client'>Récolte du besoin client</a>
+      - <a href='./project-pres.md#team'>L'équipe en charge</a>
+      - Proposition de solution (Discord VS Slack VS FROM SCRATCH)
 - <a href='./project-management.md'>Gestion du projet</a>
   - Methodologie de travail
     - <a href='./project-management.md#scrum'>SCRUM</a>
@@ -19,9 +19,10 @@
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
   - Choix de la stack
-    - Analyse comparative des stacks (Benchmark)
+    - Choix du langage
     - Choix Framework Back
     - Choix Framework Front
+    - Analyse comparative des stacks (Benchmark)
   - GitHub
     - Choix de l'architecture du projet
     - GitFlow VS Fork
