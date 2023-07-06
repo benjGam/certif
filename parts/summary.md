@@ -19,8 +19,8 @@
         - <a href='./project-management.md#convention-de-formatage-des-commits'>Conventions de formattage des commits (Angular Style)</a>
         - <a href='./project-management.md#critères-des-pull-requests'>Critères des pulls requests</a>
         - <a href='./project-management.md#github-actions'>GitHub Actions (Explication brève)</a>
-- <a href='./func-spec.md'>Spécification fonctionnelles</a>
-  - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
+- Spécification fonctionnelles
+  - <a href='./gestion-rules.md'>Règles de gestion</a>
   - <a href='./rbac.md'>RBAC</a>
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
