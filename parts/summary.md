@@ -4,20 +4,21 @@
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
     - <a href='./project-pres#client'>Récolte du besoin client</a>
       - <a href='./project-pres.md#team'>L'équipe en charge</a>
-      - Proposition de solution (Discord VS Slack VS FROM SCRATCH)
+      - Proposition de solution
 - <a href='./project-management.md'>Gestion du projet</a>
-  - Methodologie de travail
-    - <a href='./project-management.md#scrum'>SCRUM</a>
-  - Environnement et outils de travail
-    - <a href=''>Versionning</a>
+  - Methodologie de travail et Outils
+      - SCRUM
+        - Définition des rôles
+      - Jira
+    - <a href='./project-management.md#versionning'>Versionning</a>
       - <a href='./project-management.md#git'>Git</a>
-      - <a href='./project-management.md#gitflow'>GitFlow</a>
+        - <a href='./project-management.md#gitflow'>GitFlow</a>
       - <a href='./project-management.md#github'>GitHub</a>
         - Choix de l'architecture du projet
         - GitFlow VS Fork
-        - Conventions de nommage des commits (Angular Style)
+        - Conventions de formattage des commits (Angular Style)
+        - Critères des pulls requests
         - GitHub Actions (Explication brève)
-    - <a href='./project-management.md#jira'>Jira</a>
 - <a href='./func-spec.md'>Spécification fonctionnelles</a>
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
   - <a href='./rbac.md'>RBAC</a>
@@ -28,10 +29,6 @@
     - Choix Framework Back
     - Choix Framework Front
     - Analyse comparative des stacks (Benchmark)
-  - Mise en place de la méthodologie de travail
-    - SCRUM
-      - Définition des rôles
-    - Jira
   - Solution Techniques
     - Le Back-End
       - La base donnée
