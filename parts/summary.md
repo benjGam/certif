@@ -14,20 +14,30 @@
       - <a href='./project-management.md#git'>Git</a>
         - <a href='./project-management.md#gitflow'>GitFlow</a>
       - <a href='./project-management.md#github'>GitHub</a>
-        - Choix de l'architecture du projet
-        - GitFlow VS Fork
-        - Conventions de formattage des commits (Angular Style)
-        - Critères des pulls requests
-        - GitHub Actions (Explication brève)
+        - <a href='./project-management.md#mono-repository-vs-multi-repository'>Choix de l'architecture du projet</a>
+        - <a href='./project-management.md#gitflow-vs-fork'>GitFlow VS Fork</a>
+        - <a href='./project-management.md#convention-de-formatage-des-commits'>Conventions de formattage des commits (Angular Style)</a>
+        - <a href='./project-management.md#critères-des-pull-requests'>Critères des pulls requests</a>
+        - <a href='./project-management.md#github-actions'>GitHub Actions (Explication brève)</a>
 - <a href='./func-spec.md'>Spécification fonctionnelles</a>
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
   - <a href='./rbac.md'>RBAC</a>
 - Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
-  - Choix de la stack
-    - Choix du langage
-    - Choix Framework Back
-    - Choix Framework Front
+  - <a href='./stack-choice.md'>Choix de la stack</a>
+    - <a href='./stack-choice.md#la-base-de-données--postgresql'>Base de donnée</a>
+    - <a href='./stack-choice.md#choix-du-langage'>Choix du langage</a>
+      - <a href='./stack-choice.md#typescript'>Typescript</a>
+    - <a href='./stack-choice.md#api'>API</a>
+      - <a href='./stack-choice.md#stateless'>Stateless</a>
+      - <a href='./stack-choice.md#restful-api'>RESTful</a>
+    - <a href='./stack-choice.md#analyse-du-framework-back-end-api'>Choix Framework Back API</a>
+    - <a href='./stack-choice.md#choix-du-framework-back-end-bot'>Choix Framework Back Bot</a>
+    - <a href='./stack-choice.md#analyse-du-framework-front-end'>Choix Framework Front</a>
+    - <a href='./stack-choice.md#analyse-de-lorm-object-relationnal-mapping'>Choix de l'ORM</a>
+    - <a href='./stack-choice.md#tableau-récapitulatif'>Tableau Recapitulatif</a>
+    - <a href='./stack-choice.md#seo'>SEO</a>
+    - <a href='./stack-choice.md#csr'>CSR</a>
   - Solution Techniques
     - Le Back-End
       - La base donnée
