@@ -13,6 +13,10 @@
       - <a href='./project-management.md#git'>Git</a>
       - <a href='./project-management.md#gitflow'>GitFlow</a>
       - <a href='./project-management.md#github'>GitHub</a>
+        - Choix de l'architecture du projet
+        - GitFlow VS Fork
+        - Conventions de nommage des commits (Angular Style)
+        - GitHub Actions (Explication brève)
     - <a href='./project-management.md#jira'>Jira</a>
 - <a href='./func-spec.md'>Spécification fonctionnelles</a>
   - <a href='./func-spec.md#gestion-rules'>Règles de gestion</a>
@@ -24,11 +28,6 @@
     - Choix Framework Back
     - Choix Framework Front
     - Analyse comparative des stacks (Benchmark)
-  - GitHub
-    - Choix de l'architecture du projet
-    - GitFlow VS Fork
-    - Conventions de nommage des commits (Angular Style)
-    - GitHub Actions (Explication brève)
   - Mise en place de la méthodologie de travail
     - SCRUM
       - Définition des rôles
