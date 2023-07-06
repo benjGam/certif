@@ -1,22 +1,20 @@
 # Le client : Simplon
 
-Dans ce projet, notre client était l'organisme de formation Simplon HDF (Hauts-de-France).
-Simplon HDF compte 21 000 apprenants et 7 fabriques numériques.
+Dans ce projet, notre client était l'organisme de formation Simplon Hauts-de-France (Simplon HDF). Simplon HDF compte 21 000 apprenants et dispose de 7 fabriques numériques.
 
-La communication est également un enjeu majeur pour Simplon HDF, dont le principal support de communication est Discord, dans le cadre des communications entre les équipes et les apprenants.
+La communication est un enjeu majeur pour Simplon HDF, et le principal support de communication utilisé est Discord, qui permet les échanges entre les équipes et les apprenants.
 
 ## Contextualisation du projet : Discord Communautaire <a id="context"></a>
 
-Dans le cadre de ce projet, nous avons mis l'accent sur la manière dont Simplon HDF communique. En tant qu'apprenants, nous avons remarqué une tendance de la part des équipes de Simplon HDF à répéter des actions qui pourraient être automatisées facilement. De plus, nous avons constaté que la communication notamment lorsqu'il s'agit de communiquer avec les apprenants, était fastidieuse.
+Dans le cadre de ce projet, nous nous sommes concentrés sur la manière dont Simplon HDF communique. En tant qu'apprenants, nous avons remarqué que les équipes de Simplon HDF effectuent des actions répétitives qui pourraient être automatisées facilement. De plus, la communication, notamment avec les apprenants, est fastidieuse.
 
-C'est pourquoi mon équipe a réfléchi à des solutions afin de remédier à ces problèmes.
+C'est pourquoi notre équipe a réfléchi à des solutions pour remédier à ces problèmes.
 
-Aussi, notre équipe a discuter avec les membres des équipes Simplon afin de recueillir les problèmatiques rencontrées par ces derniers : 
+Nous avons également discuté avec les membres des équipes Simplon afin de recueillir les problématiques auxquelles ils sont confrontés :
 
-## Recueil du besoin client <a id='client'></a>
+## Recueil des besoins du client <a id='client'></a>
 
-Pour recueillir les besoins du client, notre équipe a d'abord discuté avec les différents membres des équipes Simplon.
-Suite à ces discussions, nous avons été en mesure d'établir une liste des problèmes les plus fréquemment rencontrés par les membres des équipes Simplon.
+Pour recueillir les besoins du client, notre équipe a d'abord discuté avec les différents membres des équipes Simplon. Suite à ces discussions, nous avons dressé une liste des problèmes les plus fréquemment rencontrés par les membres des équipes Simplon.
 
 <table>
     <tr>
@@ -55,69 +53,69 @@ Suite à ces discussions, nous avons été en mesure d'établir une liste des pr
 
 #### Multiplicité des supports de communication
 
-Concernant ce problème, nos équipes ont compris que pour les membres de Simplon, il existe une multitude de serveurs Discord permettant de discuter avec différentes entités.
-Il y a notamment 12 serveurs Discord sur une période d'un an et demi pour un formateur, en ne comptant que les serveurs réservés aux promotions concernant ce formateur et non les serveurs nécessaires au formateur pour discuter avec les membres des équipes Simplon.
+Concernant ce problème, nos équipes ont constaté qu'il existait une multitude de serveurs Discord utilisés par les membres de Simplon pour communiquer avec différentes entités. Par exemple, un formateur peut avoir accès à 12 serveurs Discord réservés aux promotions auxquelles il participe, sans compter les autres serveurs nécessaires pour communiquer avec les équipes Simplon.
 
 #### Mauvaise identification lors des interactions
 
-Discord met nativement en place un système de pseudonymes, ce qui n'est pas adapté à une utilisation professionnelle, où les membres d'une organisation ont besoin d'être identifiables. Cela peut entraîner des complications concernant l'identification des utilisateurs avec lesquels nous sommes amenés à discuter via Discord.
+Discord utilise nativement un système de pseudonymes, ce qui n'est pas adapté à une utilisation professionnelle où l'identification claire des utilisateurs est nécessaire. Cela peut entraîner des complications pour identifier les personnes avec lesquelles nous souhaitons communiquer via Discord.
+
+
 
 #### Actions répétitives du personnel
 
-Il a également été remarqué que les membres des équipes Simplon, notamment les formateurs, effectuent un nombre considérable d'actions répétitives.
-Par exemple, lors du démarrage d'une nouvelle promotion chez Simplon HDF, voici ce qu'un formateur doit faire pour permettre aux apprenants de discuter entre eux :
+Il a également été observé que les membres des équipes Simplon, en particulier les formateurs, effectuent de nombreuses actions répétitives. Par exemple, lors du démarrage d'une nouvelle promotion chez Simplon HDF, un formateur doit effectuer les étapes suivantes pour permettre aux apprenants de communiquer entre eux :
 
 ![](../imgs/scenario-crea-promo.png)
 
-Et cela doit être répété pour chaque nouvelle promotion dont le formateur a la charge.
+Et ces étapes doivent être répétées pour chaque nouvelle promotion dont le formateur est responsable.
 
 #### Manque d'ergonomie de Discord
 
-Les membres des équipes nous ont avoué ne pas se sentir très à l'aise avec l'utilisation de Discord, notamment dans un contexte professionnel. En effet, son utilisation présente des lacunes ergonomiques.
+Les membres des équipes ont également exprimé leur malaise quant à l'utilisation de Discord, notamment dans un contexte professionnel. Ils ont relevé des lacunes ergonomiques qui rendent l'utilisation de Discord moins confortable.
 
 ### Communication inefficace
 
 #### Multiplicité des messages inutiles
 
-Il a également été remarqué une tendance chez les apprenants à envoyer des messages de rappel aux membres du staff dans des scénarios où ces derniers
-
-n'ont pas reçu de réponse à leurs sollicitations. Cela peut sembler anodin, mais cela entraîne des messages inutiles ainsi que des distractions pour les membres des équipes.
+Il a également été remarqué que les apprenants ont tendance à envoyer des messages de rappel aux membres de l'équipe dans des situations où ils n'ont pas reçu de réponse à leurs sollicitations. Bien que cela puisse sembler anodin, cela génère des messages inutiles et constitue une source de distraction pour les membres des équipes.
 
 #### Perte de contact avec les anciens apprenants
 
-Certains membres des équipes Simplon nous ont interpellés quant à la perte de contact avec les anciens apprenants. En effet, dans la configuration actuelle de l'organisme de formation, il n'existe pas de réelle solution permettant de garder le contact avec les anciens apprenants. Une fois leur formation terminée, ils quittent le serveur Discord attribué à leur promotion, ce qui le rend inutilisé.
+Certains membres des équipes Simplon nous ont fait part de la difficulté à maintenir le contact avec les anciens apprenants. En effet, dans la configuration actuelle de l'organisme de formation, il n'existe pas de solution concrète permettant de rester en contact avec les anciens apprenants. Une fois leur formation terminée, ils quittent le serveur Discord dédié à leur promotion, ce qui entraîne une perte de contact.
 
 #### Problème de sourcing
 
-Les membres ont également signalé des problèmes de sourcing. Selon eux, il est relativement compliqué de remplir les promotions avec des profils correspondant aux critères de ces promotions.
+Les membres ont également signalé des problèmes de sourcing. Selon eux, il est relativement difficile de trouver des profils correspondant aux critères des promotions et de les intégrer.
 
 ## L'équipe en charge du projet <a id="team"></a>
 
-**BOURREZ Bastien** Aka le pro Discord
+**BOURREZ Bastien** (surnom : le pro Discord)
 
-**PHILIPPE Nelson** Aka l'aventurier
+**PHILIPPE Nelson** (surnom : l'aventurier)
 
-**LEROY Cédric** Aka l'encyclopédie / Redacteur en chef
+**LEROY Cédric** (surnom : l'encyclopédie / rédacteur en chef)
 
-**GAMACHE Benjamin** Aka moi même
+**GAMACHE Benjamin** (surnom : moi-même)
 
-## Proposition de solution : Discord VS Application From Scratch
+## Proposition de solution : Discord vs. Application développée de zéro
 
-Notre équipe s'est alors intérroger quant à la meilleure solution entre utilisé Discord qui d'un côté
+Notre équipe s'est interrogée sur la meilleure solution entre l'utilisation de Discord et le développement d'une application spécifique pour Simplon.
 
-- Est déjà utilisé par la majorité des membres des équipes
-- Est utilisé par la majorité des apprennants
-- Est gratuit à l'utilisation
-- Est déjà un support de communication stable
-- Est maléable par tout type d'équipe de développement
+Utiliser Discord présente les avantages suivants :
 
-Ou refaire une application From Scratch spécialement dédié à Simplon
+- Il est déjà utilisé par la majorité des membres des équipes et des apprenants.
+- Il est gratuit.
+- Il constitue déjà un support de communication stable.
+- Il est flexible et adapté à tout type d'équipe de développement.
 
-- Doit être imposé à tous les membres des équipes
-- Doit être imposé à tous les apprennants
-- Ajoute un support de communication à tous les utilisateurs
-- Coute un certains prix en terme de graphisme
-- Représente un grand cout en terme de serveur d'hebergement
-- Nécessite des connaissances avancées dans certains langages lourds
+En revanche, développer une application spécifique impliquerait les éléments suivants :
 
-C'est pour toutes ces raisons que nous avons choisi d'utiliser Discord plutôt que de repartir d'une application From Scratch
+- Imposer l'utilisation de l'application à tous les membres des équipes et apprenants.
+- Ajouter un nouveau support de communication pour tous les utilisateurs.
+- Engendrer des coûts en termes de graphisme.
+- Nécessiter un hébergement de serveur plus important.
+- Requérir des connaissances avancées dans certains langages de programmation.
+
+C'est pourquoi nous avons choisi d'utiliser Discord plutôt que de développer une application à
+
+partir de zéro.

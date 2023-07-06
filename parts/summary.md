@@ -28,7 +28,6 @@
     - Choix du langage
     - Choix Framework Back
     - Choix Framework Front
-    - Analyse comparative des stacks (Benchmark)
   - Solution Techniques
     - Le Back-End
       - La base donnée
