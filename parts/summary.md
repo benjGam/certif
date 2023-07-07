@@ -66,12 +66,11 @@
   - Solution Techniques
     - Le Back-End
       - La base donnée
-        - Forme normale
+        - Conception
+          - Forme normale
           - 1NF
           - 2NF
           - 3NF
-          - 4NF
-        - Conception
           - Dictionnaire de donnée
           - Merise
             - MCD
