@@ -6,16 +6,17 @@ Nous avons réalisé des études quant aux technologies adaptées à ce projet, 
 
 Il nous fallait un moyen de faire persister des données, donc une base de données. Cependant, il existe plusieurs types de bases de données :
 
-- Relationnelles
-- Non relationnelles
-- SQL
-- NoSQL
+- Relationnelles (SQL)
+- Non relationnelles (No SQL)
+  
+
+! REMPLACER LE BORDEL EN DESSOUS PAR : Robuste, Scalable, PG permet de faire du NoSQL, Sécurisé
 
 Nous avons réalisé des comparatifs quant aux différentes solutions disponibles pour faire persister nos données, et notre équipe a choisi PostgreSQL en guise de SGBD (Système de Gestion de Base de Données).
 
 En raison de l'utilisation de PostgreSQL dans de nombreux projets, nous avons déterminé que PG est fiable. De plus, PostgreSQL est performant, il est capable d'apporter des taux de performances satisfaisants dans des scénarios de grandes sollicitations de l'accès aux données.
 
-PostgreSQL est open-source, ce qui en fait un SGBD flexible et adaptable aux besoins rencontrés pour le projet.
+PostgreSQL est open-source, ce qui en fait un SGBDRO flexible et adaptable aux besoins rencontrés pour le projet.
 
 C'est pour toutes ces raisons que PostgreSQL a été sélectionné pour la persistance de nos données.
 
@@ -27,7 +28,9 @@ C'est pourquoi notre choix s'est porté sur TypeScript.
 
 ### TypeScript
 
-TypeScript est un langage plus robuste que JavaScript. Il s'agit d'un "superset" ou "sur-ensemble" de JavaScript qui introduit de nombreux concepts que JavaScript vanilla n'implémente pas, tels que la POO (Programmation Orientée Objet).
+TypeScript est un langage plus robuste que JavaScript. Il s'agit d'un "superset" de JavaScript qui introduit de nombreux concepts que JavaScript vanilla n'implémente pas, tels que la POO (Programmation Orientée Objet).
+
+! TYPAGE FORT + ERREUR DE COMPIL PLUS CLAIRE
 
 Dans un projet de cette envergure, il est absolument nécessaire de pouvoir utiliser la Programmation Orientée Objet. Même si un bot peut sembler très basique de l'extérieur, à l'intérieur, c'est une autre affaire. Ce projet aurait pu être réalisé dans les délais avec du JavaScript vanilla, cependant, la maintenabilité du code aurait été quasiment impossible pour une équipe devant reprendre le projet.
 
@@ -72,6 +75,7 @@ La mise en place d'une architecture RESTful semblait être la solution la plus a
 | Equipe Développement     | 0       | 2       | 1       | 1       |
 | Communauté Github        | 1       | 1       | 1       | 0       |
 | Communauté StackOverflow | 1       | 1       | 2       | 0       |
+| Sécurisé By Design       | 0       | 0       | 2       | 2       |
 | Documentation            | 0       | 1       | 2       | 2       |
 | Magie                    | 0       | 0       | 0       | 0       |
 | Mariage librairies       | 2       | 2       | 2       | 0       |
@@ -130,7 +134,11 @@ Notre équipe a décidé d'utiliser le framework Discord.js pour développer les
 | License                  | Apache2 | MIT     |
 | Total                    | 20      | 18      |
 
-Si l'on s'attarde sur le benchmark de l'ORM, on peut voir que TypeORM semblait être conçu à la place de Prisma. Cependant, notre équipe a dû choisir la solution la plus adaptée au projet, et il est apparu que, pour une équipe aussi réduite que la nôtre et dans les délais imposés, TypeORM semblait être trop lourd pour être intégré de manière optimisée au projet. C'est pourquoi, malgré l'analyse des caractéristiques de ces ORM, notre équipe a préféré utiliser Prisma plutôt que TypeORM.
+Expliquer pour l'ORM ?
+
+- Sécurisation des requêtes via requêtes préparées
+
+Si l'on s'attarde sur le benchmark de l'ORM, on peut voir que TypeORM semblait être préféré à la place de Prisma. Cependant, notre équipe a dû choisir la solution la plus adaptée au projet, et il est apparu que, pour une équipe aussi réduite que la nôtre et dans les délais imposés, TypeORM semblait être trop lourd pour être intégré de manière optimisée au projet. C'est pourquoi, malgré l'analyse des caractéristiques de ces ORM, notre équipe a préféré utiliser Prisma plutôt que TypeORM.
 
 ### Tableau récapitulatif 
 
@@ -161,9 +169,11 @@ SEO signifie Search Engine Optimization, il s'agit d'une liste de critères à r
 - Présence de liens internes et externes significatifs dans les pages
 - Rendu des pages en SSR (Server-Side Rendering)
 
-Notre application Web, ayant pour but de gérer les différents bots depuis un panel d'accès Web, il était inutile de se préoccuper du référencement du site Web dans le cadre de ce projet. L'application Web étant destinée à un nombre restreint d'utilisateurs des équipes Simplon HDF.
+Notre application Web, ayant pour but de gérer les différents bots depuis un panel d'accès Web, il était inutile de se préoccuper du référencement du site Web dans le cadre de ce projet. L'application Web n'a pas vocation à ouverte au public et est restreinte à une communauté Simplonnienne.
 
-#### CSR
+#### CSR vs SSR
+
+! Intro CSR vs SSR : Expliquer pourquoi CSR
 
 Le CSR est un mode de rendu des pages Web côté client, c'est-à-dire que le rendu des pages Web est effectué côté client et non côté serveur, ce qui impacte directement les performances d'affichage d'une page Web selon la machine du client voulant la consulter. Il n'était pas utile de mettre en place un mode de rendu SSR dans le cadre de ce projet, car cela aurait nui aux performances du serveur qui aurait alors dû gérer le rendu des pages.
 

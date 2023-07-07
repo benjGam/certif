@@ -1,6 +1,6 @@
 # Le client : Simplon
 
-Dans ce projet, notre client était l'organisme de formation Simplon Hauts-de-France (Simplon HDF). Simplon HDF compte 21 000 apprenants et dispose de 7 fabriques numériques.
+Dans ce projet, notre client était l'organisme de formation Simplon Hauts-de-France (Simplon HDF). Simplon compte 21 000 apprenants et dispose de 7 fabriques numériques dans la région Hauts-De-France.
 
 La communication est un enjeu majeur pour Simplon HDF, et le principal support de communication utilisé est Discord, qui permet les échanges entre les équipes et les apprenants.
 
@@ -8,9 +8,7 @@ La communication est un enjeu majeur pour Simplon HDF, et le principal support d
 
 Dans le cadre de ce projet, nous nous sommes concentrés sur la manière dont Simplon HDF communique. En tant qu'apprenants, nous avons remarqué que les équipes de Simplon HDF effectuent des actions répétitives qui pourraient être automatisées facilement. De plus, la communication, notamment avec les apprenants, est fastidieuse.
 
-C'est pourquoi notre équipe a réfléchi à des solutions pour remédier à ces problèmes.
-
-Nous avons également discuté avec les membres des équipes Simplon afin de recueillir les problématiques auxquelles ils sont confrontés :
+En tant qu'utilisateur régulier Discord, notre équipe s'est automatiquement tourné vers Discord en guise de support de communication principal pour ce projet.
 
 ## Recueil des besoins du client <a id='client'></a>
 
@@ -53,13 +51,11 @@ Pour recueillir les besoins du client, notre équipe a d'abord discuté avec les
 
 #### Multiplicité des supports de communication
 
-Concernant ce problème, nos équipes ont constaté qu'il existait une multitude de serveurs Discord utilisés par les membres de Simplon pour communiquer avec différentes entités. Par exemple, un formateur peut avoir accès à 12 serveurs Discord réservés aux promotions auxquelles il participe, sans compter les autres serveurs nécessaires pour communiquer avec les équipes Simplon.
+Concernant ce problème, notre équipe a constaté qu'il existait une multitude de serveurs Discord utilisés par les membres de Simplon pour communiquer avec différentes entités. Par exemple, un formateur peut avoir accès à 12 serveurs Discord (sur une période d'un an et demi) réservés aux promotions auxquelles il participe, sans compter les autres serveurs nécessaires pour communiquer avec les équipes Simplon.
 
 #### Mauvaise identification lors des interactions
 
 Discord utilise nativement un système de pseudonymes, ce qui n'est pas adapté à une utilisation professionnelle où l'identification claire des utilisateurs est nécessaire. Cela peut entraîner des complications pour identifier les personnes avec lesquelles nous souhaitons communiquer via Discord.
-
-
 
 #### Actions répétitives du personnel
 
@@ -77,7 +73,7 @@ Les membres des équipes ont également exprimé leur malaise quant à l'utilisa
 
 #### Multiplicité des messages inutiles
 
-Il a également été remarqué que les apprenants ont tendance à envoyer des messages de rappel aux membres de l'équipe dans des situations où ils n'ont pas reçu de réponse à leurs sollicitations. Bien que cela puisse sembler anodin, cela génère des messages inutiles et constitue une source de distraction pour les membres des équipes.
+Il a également été remarqué que les apprenants ont tendance à envoyer des messages de rappel aux membres des équipes dans des situations où ils n'ont pas reçu de réponse à leurs sollicitations. Bien que cela puisse sembler anodin, cela génère des messages inutiles et constitue une source de distraction pour les membres des équipes.
 
 #### Perte de contact avec les anciens apprenants
 
@@ -89,15 +85,15 @@ Les membres ont également signalé des problèmes de sourcing. Selon eux, il es
 
 ## L'équipe en charge du projet <a id="team"></a>
 
-**BOURREZ Bastien** (surnom : le pro Discord)
+**BOURREZ Bastien** alias le pro Discord
 
-**PHILIPPE Nelson** (surnom : l'aventurier)
+**PHILIPPE Nelson** alias l'aventurier
 
-**LEROY Cédric** (surnom : l'encyclopédie / rédacteur en chef)
+**LEROY Cédric** alias l'encyclopédie / rédacteur en chef
 
-**GAMACHE Benjamin** (surnom : moi-même)
+**GAMACHE Benjamin** aka moi-même
 
-## Proposition de solution : Discord vs. Application développée de zéro
+## Proposition de solution : Discord vs. From Sratch
 
 Notre équipe s'est interrogée sur la meilleure solution entre l'utilisation de Discord et le développement d'une application spécifique pour Simplon.
 
@@ -116,6 +112,4 @@ En revanche, développer une application spécifique impliquerait les éléments
 - Nécessiter un hébergement de serveur plus important.
 - Requérir des connaissances avancées dans certains langages de programmation.
 
-C'est pourquoi nous avons choisi d'utiliser Discord plutôt que de développer une application à
-
-partir de zéro.
+C'est pourquoi nous avons choisi d'utiliser Discord plutôt que de développer une application à partir de zéro.
