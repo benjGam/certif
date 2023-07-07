@@ -187,3 +187,15 @@ Note: Il n'existe plus de framework qui utilise pûrement l'un ou l'autre de ces
 #### Hébergement
 
 Nous avons choisi d'héberger l'application sur des serveurs dédiés internes à Simplon HDF. Cependant, à l'heure actuelle, nous nous sommes trompés, car l'application est hébergée sur des VPS.
+
+### Testing
+
+#### JEST
+
+![](../imgs/jest.png)
+
+JEST est un framework Javascript permettant d'exécuter des tests unitaires pour des applications de tout type.
+Avec JEST il est facile d'écrire des tests et de les exécuter.
+
+#### Coverage
+

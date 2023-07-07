@@ -58,8 +58,8 @@
     - <a href='./stack-choice.md#seo'>SEO</a>
     - <a href='./stack-choice.md#csr'>CSR vs SSR</a>
     - Testing
-      - Coverage
       - JEST
+      - Coverage
       - Non regression
       - Unitaire
       - Integration
