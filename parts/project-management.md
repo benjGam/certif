@@ -16,7 +16,7 @@ Aussi, Agile considère que les besoins et les exigences du projet évoluent tou
 
 Dû à ces délimitations des cycles de développement flexible, Agile permet à l'équipe de développement de s'améliorer de façon continue en mettant en place des rituels tels que les Sprint Review et les Sprint Retrospectives qui ont lieu à la fin de chaque sprint, permettant aux différents membres de l'équipe de discuter des succès et des difficultés rencontrées lors du dernier sprint.
 
-De plus Agile inclût un indicateur de mesure "La vélocité" qui est recalculé à chaque fin de sprints, de cette façons les membres de l'équipes sont capables d'évalués la quantité de travail achevée lors du sprint.
+De plus Agile inclut une métrique : La vélocité qui est recalculé à chaque fin de sprints, de cette façons les membres de l'équipes sont capables d'évalués la quantité de travail achevée lors du sprint.
 
 ### Framework SCRUM
 
@@ -75,6 +75,32 @@ L'équipe de développement est constitué de 5 à 7 développeurs la plupart du
 
 La vélocité calculée à chaque fin de sprint permet au SCRUM Master de jauger la charge de travail à effectuer dans le prochain sprint.
 
+#### SCRUM : Les rituels
+
+##### Sprint Planning
+
+Le Sprint Planning est organisé par le SCRUM Master afin d'établir la liste des User Stories à mettre dans le prochain sprint, l'équipe s'accorde à dire que toutes les User Stories sont en mesures d'être complétés à l'issue du sprint (notamment en se basant sur la vélocité calculée à la fin du dernier sprint)
+
+##### Daily Scrum
+
+Le Daily Scrum à lieu tous les jours, il s'agit d'une réunion d'une durée moyenne de 15 minutes qui permet à l'équipe de se remettre en phase avec les objectifs du Sprint en cours.
+
+Les questions indicatives à se poser pour les membres de l'équipe afin d'établir s'il est en phase avec les objectifs sont : 
+
+- Qu'est ce que j'ai fais hier ?
+- Qu'est ce que je dois faire aujourd'hui ?
+- Quels obstacles j'ai et je pourrai rencontrer ?
+
+##### Sprint Review
+
+La Sprint Review permet à l'équipe de présenter le travail réalisé lors du Sprint aux différentes parties prenantes, lors de cette réunion, le Product Owner peut décider de livrer ou non le travail réalisé.
+
+Pour un Sprint d'une durée d'1 semaine envisagez 1 heure de Sprint Review
+
+##### Sprint Retrospective
+
+Cette réunion permet aux membre de l'équipe de revenir sur le déroulement du Sprint, ce qui à fonctionner et ce qui n'a pas fonctionné, l'idée de cette réunion est de trouver des pistes d'améliorations pour les prochains Sprints de l'équipe, et non pas de mettre en lumière les echecs.
+
 #### Définition des rôles
 
 GAMACHE Benjamin occupe le rôle de Product Owner, qui consiste notamment à prendre en charge les interactions entre l'équipe en charge du projet et le client.
@@ -87,7 +113,11 @@ PHILIPPE Nelson est LEROY Cédric occupent tous deux le rôle de Développeur, q
 
 Pour nous organiser sur ce projet, mon équipe et moi-même avons choisi Jira, qui est une plateforme permettant d'organiser les différentes tâches d'un projet en les découpant en Epic, puis en User Story, et enfin en tâches.
 
-## Versionning
+![](../imgs/jira/backlog.png)
+
+Product BackLog du projet
+
+## Semantic Versionning
 
 Le versionning est un concept selon lequel il existe plusieurs versions d'un code. Par exemple, pour une application en version 1.0.0, on dit que la version du code est à sa première version majeure. Le chiffre du milieu représente les versions du code où celui-ci a subi des modifications mineures (MINOR), et enfin le troisième chiffre représente le nombre de versions "patch" du code.
 
@@ -95,21 +125,21 @@ Notons aussi que si une version mineure est publiée, les versions patch du code
 
 Grâce au versionning, il est possible de structurer les différentes versions du code et d'apporter des informations claires et détaillées quant aux modifications que le code a subies.
 
+![](../imgs/versionning.png)
+
 ### Git
 
 Git est un outil permettant de versionner son code. Avec Git, il est possible d'écrire du code et de le séparer sur des branches, de revenir à des versions antérieures du code. Git permet aussi d'envoyer son code sur des plateformes en ligne comme BitBucket, GitLab, GitHub, ou de l'envoyer sur des plateformes de self-hosting pour héberger du code en ligne.
 
-Cela permet la collaboration d'une équipe sur un projet.
-
-! GIT EST MANDATORY MANDATORY
+Git est essentiel à chaque équipe de développement afin de collaborer sur un projet, chaque membre d'une équipe de développement utilise Git afin d'apporter des modifications au code d'un projet.
 
 ### GitFlow
 
-GitFlow est une extension de l'outil Git permettant de créer plus
+GitFlow est un workflow standardisé, il permet à tous les membres d'une équipe d'adopter le même workflow.
 
-facilement des branches Git. Par exemple, il apporte un module permettant de créer des branches nommées "Feature" qui permettent d'identifier les modifications apportées au code. Une branche de travail "feature" est une branche sur laquelle les modifications apportées au code sont liées à l'ajout de fonctionnalités.
+![](../imgs/gitflow.png)
 
-! REMPLACER PAR WORKFLOW STANDARDISE
+Avec GitFlow il est facile et rapide de définir un Workflow pour une équipe de développement, c'est pourquoi notre équipe s'est tournée vers GitFlow pour collaborer
 
 ### GitHub
 
@@ -157,9 +187,7 @@ Pour réaliser nos commits, notre équipe a adopté la convention "Angular Style
 - Un corps de commit (optionnel).
 - Un footer de commit (optionnel).
 
-Un commit rédigé selon le style Angular se présente la plupart du temps comme suit : ```<type> (scope): [description]```. Ce formatage des commits permet aux membres de l'équipe de développement de comprendre rapidement les modifications apportées au projet. C'est pourquoi notre équipe a opté pour cette convention dans le formatage de nos commits.
-
-! AJOUTER UN EXEMPLE CONCRET
+![](/imgs/angular-style.png)
 
 #### Critères des Pull Requests
 
