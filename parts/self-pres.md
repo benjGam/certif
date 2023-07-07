@@ -10,4 +10,4 @@ C'est pourquoi, il y a quelques mois, j'ai décidé d'intégrer une formation de
 
 Grâce au projet que j'ai réalisé pendant ma formation, j'ai pris conscience des opportunités offertes par Discord dans le monde professionnel. On peut dire la même chose de Wordpress. Qui aurait pu imaginer que Wordpress deviendrait si lucratif ?
 
-C'est pourquoi, à la fin de ce projet, j'ai décidé de créer ma start-up spécialisée dans le développement de bots Discord.
+C'est pourquoi, à l'issue de ce projet, j'ai décidé de créer ma start-up spécialisée dans le développement de bots Discord.
