@@ -2,17 +2,78 @@
 
 Avant de démarrer un projet, il est important de se poser les bonnes questions, telles que la façon dont le projet devra être géré, quels objectifs le projet se fixe, et bien d'autres questions auxquelles mon équipe a tenté d'apporter des réponses les plus adaptées possible.
 
-## Méthodologie de travail
+## Méthodologie de travail : Agile
 
-### SCRUM
+La méthodologie Agile est une méthodologie itérative permettant le découpage des différents cycles de développement d'un projet en "sprint", chaque sprint à une durée moyenne d'1 à 4 semaines, à l'issue de ce sprint, une version fonctionnelle peut être présentée au client.
 
-Notre équipe a adopté une méthodologie de travail Agile avec la méthode SCRUM, qui permet d'améliorer la collaboration et la communication au sein de l'équipe de développement, notamment en impliquant chaque membre de l'équipe dans la prise de décision concernant le projet.
+De plus, une équipe Agile intéragira de façon auto-gérée, au sein d'une équipe Agile, la collaboration se fait entre tous les membres de façon étroite, le partage des responsabilités est aussi un des aspects clés de cette méthodologie, cette proximité au sein de l'équipe Agile permet une communication continue. 
 
-SCRUM est une méthodologie flexible qui permet de s'adapter aux changements de priorité du projet. En utilisant SCRUM, nous sommes capables de gérer les incertitudes et de répondre aux attentes du client.
+Agile apporte une livraison continue / itérative du produit au client, à chaque fin de sprint, le client peut récupérer une version du produit fonctionnelle et en tirer partie.
 
-Voici comment se constitue SCRUM :
+Les tâches d'un projet sont priorisées au sein d'un product Backlog selon la valeur ajoutée pour le client, il est nécessaire d'établir un product Backlog en priorisant les tâches à effectuer dès le début afin de permettre au client de tirer avantage au plus vite du produit.
+
+Aussi, Agile considère que les besoins et les exigences du projet évoluent tout au long de la vie de ce dernier, avec Agile, l'équipe peut s'adapter à ces changements et effectuer des ajustements en fonction des nouvelles informations fournies par le client après qu'il ait reçu la dernière version fonctionnelle du produit.
+
+Dû à ces délimitations des cycles de développement flexible, Agile permet à l'équipe de développement de s'améliorer de façon continue en mettant en place des rituels tels que les Sprint Review et les Sprint Retrospectives qui ont lieu à la fin de chaque sprint, permettant aux différents membres de l'équipe de discuter des succès et des difficultés rencontrées lors du dernier sprint.
+
+De plus Agile inclût un indicateur de mesure "La vélocité" qui est recalculé à chaque fin de sprints, de cette façons les membres de l'équipes sont capables d'évalués la quantité de travail achevée lors du sprint.
+
+### Framework SCRUM
 
 ![](../assets/illu/scrum.png)
+
+SCRUM ou littéralement Mélée est un framework permettant aux équipes qui le mettent en place d'adopter une approche Agile et d'apporter de la flexibilité au projet.
+
+Le framework SCRUM permet à chaque membre d'une équipe d'avoir un rôle à jouer dans la prise de décision concernant un projet.
+
+La taille d'une équipe SCRUM peut varier, mais il est important de savoir que SCRUM est plus adaptée à des équipes à effectife réduite, en effet, à partir d'un certains nombre de membre, peu importe la méthodologie utilisé au sein d'une équipe, la communication devient de plus en plus complexe.
+
+SCRUM se reposent sur 4 grandes valeurs et 12 principes
+
+#### SCRUM : 4 Valeurs
+
+##### Individus & Interaction > Processus & Outils
+
+Une équipe engagée créer un produit de valeur estimable
+
+##### Un produit fonctionnel > Une documentation exhaustive
+
+La documentation d'un produit est essentielle, cependant une équipe doit se concentrer sur les fonctionnalités d'un produit plutôt que sur la rédaction d'une documentation.
+
+##### Collaboration avec le client > Negociation contractuelle
+
+Il est essentiel de placer le client au sein du processus de développement du produit, les retours du client sur le produit sont une source d'information précieuse, une bonne collaboration entre le client et l'équipe SCRUM permet l'élaboration d'un produit fini le plus fidèle aux exigences du client.
+
+##### Adaptation au changement > Suivi d'un plan
+
+Dans SCRUM l'apport de modifications aux projets n'est pas un obstacle, étant donné que le produit se construit de façon itérative, en plaçant le client au centre du processus de développement, il est plus facile pour les équipes d'effecuter des ajustements concernant le projet tout au long de ces cycles de développement, plutôt que d'avoir à revoir complétement certains aspects du produit à la fin du développement de ce dernier.
+
+#### SCRUM : Les rôles
+
+##### Product Owner
+
+Le Product Owner est le responsable de la liaison entre le client et l'équipe de développement, son rôle est de comprendre le client et de retranscrir sa demande aux équipes de développement
+
+Les tâches du Product Owner sont :
+
+- De créer et gérer un Product Backlog en prennant en compte les tâches à prioriser.
+- Collaborer avec les équipes afin de s'assurer que tous les membres comprennent le Product Backlog du projet.
+- Fournit à l'équipe les prochaines fonctionnalités à livrer
+- Décident de la durée des sprints
+
+##### Le Scrum Master
+
+Le Scrum Master est le membre responsable de l'application de SCRUM au sein de son équipe, il analyse perpetuellement les optimisations possible à apporter en terme d'application SCRUM au sein de son équipe, il s'assure de comprendre ce que l'équipe doit réaliser et aide celle-ci à optimiser la transparence du projet et le flux de livraison de ce dernier, il gère les ressources humaines et logistiques d'une équipe pour planifier les sprints.
+
+Il organise les cérémonies SCRUM.
+
+##### L'équipe de développement
+
+L'équipe de développement est constitué de 5 à 7 développeurs la plupart du temps, ces développeurs travaillent en étroite collaboration, ce qui permet d'aider chaque membre de l'équipe de développement en difficulté afin de ne pas se retrouver avec un retard dans la livraison du produit à la fin du sprint.
+
+##### La vélocité & SCRUM
+
+La vélocité calculée à chaque fin de sprint permet au SCRUM Master de jauger la charge de travail à effectuer dans le prochain sprint.
 
 #### Définition des rôles
 
@@ -20,19 +81,19 @@ GAMACHE Benjamin occupe le rôle de Product Owner, qui consiste notamment à pre
 
 BOUREZ Bastien occupe le rôle de Scrum Master, qui consiste à diriger les membres de l'équipe en charge du projet et à assigner des tâches à chacun.
 
-PHILIPPE Nelson et LEROY Cédric occupent tous deux le rôle de Développeur, qui consiste à développer les différentes solutions élaborées par tous les membres de l'équipe en charge du projet et validées par le client.
+PHILIPPE Nelson est LEROY Cédric occupent tous deux le rôle de Développeur, qui consiste à développer les différentes solutions élaborées par tous les membres de l'équipe en charge du projet et validées par le client.
 
 ### Jira
 
 Pour nous organiser sur ce projet, mon équipe et moi-même avons choisi Jira, qui est une plateforme permettant d'organiser les différentes tâches d'un projet en les découpant en Epic, puis en User Story, et enfin en tâches.
 
-## Versionnage
+## Versionning
 
-Le versionnage est un concept selon lequel il existe plusieurs versions d'un code. Par exemple, pour une application en version 1.0.0, on dit que la version du code est à sa première version majeure. Le chiffre du milieu représente les versions du code où celui-ci a subi des modifications mineures (MINOR), et enfin le troisième chiffre représente le nombre de versions "patch" du code.
+Le versionning est un concept selon lequel il existe plusieurs versions d'un code. Par exemple, pour une application en version 1.0.0, on dit que la version du code est à sa première version majeure. Le chiffre du milieu représente les versions du code où celui-ci a subi des modifications mineures (MINOR), et enfin le troisième chiffre représente le nombre de versions "patch" du code.
 
 Notons aussi que si une version mineure est publiée, les versions patch du code sont remises à 0 et la version mineure du code est incrémentée de 1. De même pour les versions majeures, si une version majeure est publiée, les versions mineures et patch sont remises à 0.
 
-Grâce au versionnage, il est possible de structurer les différentes versions du code et d'apporter des informations claires et détaillées quant aux modifications que le code a subies.
+Grâce au versionning, il est possible de structurer les différentes versions du code et d'apporter des informations claires et détaillées quant aux modifications que le code a subies.
 
 ### Git
 
@@ -40,11 +101,15 @@ Git est un outil permettant de versionner son code. Avec Git, il est possible d'
 
 Cela permet la collaboration d'une équipe sur un projet.
 
+! GIT EST MANDATORY MANDATORY
+
 ### GitFlow
 
 GitFlow est une extension de l'outil Git permettant de créer plus
 
 facilement des branches Git. Par exemple, il apporte un module permettant de créer des branches nommées "Feature" qui permettent d'identifier les modifications apportées au code. Une branche de travail "feature" est une branche sur laquelle les modifications apportées au code sont liées à l'ajout de fonctionnalités.
+
+! REMPLACER PAR WORKFLOW STANDARDISE
 
 ### GitHub
 
@@ -92,20 +157,20 @@ Pour réaliser nos commits, notre équipe a adopté la convention "Angular Style
 - Un corps de commit (optionnel).
 - Un footer de commit (optionnel).
 
-Un commit rédigé selon le style Angular se présente la plupart du temps comme suit : "<type> (scope): [description]". Ce formatage des commits permet aux membres de l'équipe de développement de comprendre rapidement les modifications apportées au projet. C'est pourquoi notre équipe a opté pour cette convention dans le formatage de nos commits.
+Un commit rédigé selon le style Angular se présente la plupart du temps comme suit : ```<type> (scope): [description]```. Ce formatage des commits permet aux membres de l'équipe de développement de comprendre rapidement les modifications apportées au projet. C'est pourquoi notre équipe a opté pour cette convention dans le formatage de nos commits.
+
+! AJOUTER UN EXEMPLE CONCRET
 
 #### Critères des Pull Requests
 
-Pour qu'une Pull Request
+Pour qu'une Pull Request soit acceptée, nous avons mis en place des critères sur la branche de développement (develop). Ainsi, avant chaque fusion de branche vers develop, les modifications de la branche devaient être approuvées par un autre membre de l'équipe.
 
-soit acceptée, nous avons mis en place des critères sur la branche de développement (develop). Ainsi, avant chaque fusion de branche vers develop, les modifications de la branche devaient être approuvées par un autre membre de l'équipe.
+Critères d'acception des PR
 
-Chaque membre de l'équipe pouvait soumettre son travail aux autres et s'assurer que ses modifications étaient conformes aux objectifs du projet. Pour qu'une Pull Request soit acceptée, il fallait donc :
-
-- Que les commits de cette Pull Request soient rédigés selon le style Angular.
+- Commit rédigé
 - Que les commits soient rédigés en anglais.
-- Que les commits soient suffisamment explicites pour comprendre les modifications apportées au projet par ce commit.
-- Que les modifications apportées par la Pull Request soient approuvées par un ou plusieurs membres de l'équipe.
+- Intitulé des commits claires
+- Validation par un membre de l'équipe.
 
 #### GitHub Actions
 
