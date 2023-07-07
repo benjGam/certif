@@ -71,10 +71,6 @@ Il organise les cérémonies SCRUM.
 
 L'équipe de développement est constitué de 5 à 7 développeurs la plupart du temps, ces développeurs travaillent en étroite collaboration, ce qui permet d'aider chaque membre de l'équipe de développement en difficulté afin de ne pas se retrouver avec un retard dans la livraison du produit à la fin du sprint.
 
-##### La vélocité & SCRUM
-
-La vélocité calculée à chaque fin de sprint permet au SCRUM Master de jauger la charge de travail à effectuer dans le prochain sprint.
-
 #### SCRUM : Les rituels
 
 ##### Sprint Planning
@@ -203,3 +199,28 @@ Critères d'acception des PR
 #### GitHub Actions
 
 GitHub Actions est une fonctionnalité proposée par GitHub qui permet d'exécuter des actions à partir des dépôts. Par exemple, il est possible de mettre en place une pipeline CI/CD avec GitHub Actions en créant un script YAML sur le dépôt et en y exécutant les opérations souhaitées. Nous aborderons plus en détail GitHub Actions dans la section Déploiement de ce dossier.
+
+#### Qualité de code : ESLint
+
+Afin d'assurer une qualité de code correcte, notre équipe à choisi ESLint en guise de Linter car il prends en charge Typescript et permet de vérifier certains critères concernant le code de façon statique, il notifie les développeurs lorsque : 
+
+- Une variable n'existe pas
+- Une variable ou un paramètre n'existe pas
+- Les doubles déclarations de variables
+- Les doubles implémentation pour une fonction
+- La mauvaise organisation du code
+- Les erreurs de syntaxe
+
+De plus ESLint permet d'être configurer selon certaines conventions, notre équipe s'est orientée vers la convention AirBnb
+
+##### La convention AirBnb
+
+Voici quelques spécifications de la convention ESLint AirBnb
+
+- Utilisez des guillemets simples pour les chaînes de caractères, sauf lorsque vous devez utiliser des guillemets simples à l'intérieur de la chaîne.
+- Utilisez des parenthèses autour des arguments de fonction, même s'ils ne sont pas nécessaires dans certains cas.
+- Utilisez l'indentation avec des espaces et configurez-la à 2 espaces.
+- Déclarez les variables avec `const` ou `let` selon leur réassignabilité. Évitez d'utiliser `var`.
+- Utilisez des accolades pour les blocs de code, même s'ils ne sont pas strictement nécessaires.
+
+Ces points font partie des recommandations générales de la configuration ESLint Airbnb.
