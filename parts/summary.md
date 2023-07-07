@@ -4,11 +4,25 @@
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
     - <a href='./project-pres#client'>Récolte du besoin client</a>
       - <a href='./project-pres.md#team'>L'équipe en charge</a>
-      - Proposition de solution
+      - <a href='./project-pres.md#proposition-de-solution--discord-vs-from-sratch'>Proposition de solution</a>
 - <a href='./project-management.md'>Gestion du projet</a>
-  - Methodologie de travail et Outils
+  - <a href='./project-management.md#méthodologie-de-travail--agile'>Methodologie de travail : Agile
       - <a href='./project-management.md#scrum'>SCRUM</a>
-        - <a href='./project-management.md#définition-des-rôles'>Définition des rôles</a>
+        - Les 4 valeurs
+          - <a href='./project-management.md#individus--interaction--processus--outils'>Individus & Interaction > Processus & Outils</a>
+          - <a href='./project-management.md#un-produit-fonctionnel--une-documentation-exhaustive'>Un produit fonctionnel > Une documentation exhaustive</a>
+          - <a href='./project-management.md#collaboration-avec-le-client--negociation-contractuelle'>Collaboration avec le client > Negociation contractuelle</a>
+          - <a href='./project-management.md#adaptation-au-changement--suivi-dun-plan'>Adaptation au changement > Suivi d'un plan</a>
+        - Les rôles
+          - <a href='./project-management.md#product-owner'>Le Product Owner</a>
+          - <a href='./project-management.md#le-scrum-master'>Le Scrum Master</a>
+          - <a href='./project-management.md#léquipe-de-développement'>L'équipe de développement</a>
+        - Les rituels
+          - <a href='./project-management.md#sprint-planning'>Sprint Planning</a>
+          - <a href='./project-management.md#daily-scrum'>Daily Scrum</a>
+          - <a href='./project-management.md#sprint-review'>Sprint Review</a>
+          - <a href='./project-management.md#sprint-retrospective'>Sprint Retrospective</a>
+      - <a href='./project-management.md#définition-des-rôles'>Définition des rôles</a>
       - <a href='./project-management.md#jira'>Jira</a>
     - <a href='./project-management.md#versionning'>Versionning</a>
       - <a href='./project-management.md#git'>Git</a>
@@ -19,11 +33,13 @@
         - <a href='./project-management.md#convention-de-formatage-des-commits'>Conventions de formattage des commits (Angular Style)</a>
         - <a href='./project-management.md#critères-des-pull-requests'>Critères des pulls requests</a>
         - <a href='./project-management.md#github-actions'>GitHub Actions (Explication brève)</a>
+    - <a href='./project-management.md#qualité-de-code--eslint'>Objectif de qualité de code : ESLint</a>
+      - <a href='./project-management.md#la-convention-airbnb'>Convention AirBnb</a>
 - Spécification fonctionnelles
   - <a href='./gestion-rules.md'>Règles de gestion</a>
   - <a href='./rbac.md'>RBAC</a>
-- Spécification Technique
   - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
+- Spécification Technique
   - <a href='./stack-choice.md'>Choix de la stack</a>
     - <a href='./stack-choice.md#la-base-de-données--postgresql'>Base de donnée</a>
     - <a href='./stack-choice.md#choix-du-langage'>Choix du langage</a>
@@ -32,15 +48,27 @@
       - <a href='./stack-choice.md#stateless'>Stateless</a>
       - <a href='./stack-choice.md#restful-api'>RESTful</a>
     - <a href='./stack-choice.md#analyse-du-framework-back-end-api'>Choix Framework Back API</a>
+      - Architecture MVC
     - <a href='./stack-choice.md#choix-du-framework-back-end-bot'>Choix Framework Back Bot</a>
     - <a href='./stack-choice.md#analyse-du-framework-front-end'>Choix Framework Front</a>
     - <a href='./stack-choice.md#analyse-de-lorm-object-relationnal-mapping'>Choix de l'ORM</a>
     - <a href='./stack-choice.md#tableau-récapitulatif'>Tableau Recapitulatif</a>
     - <a href='./stack-choice.md#seo'>SEO</a>
     - <a href='./stack-choice.md#csr'>CSR</a>
+    - Testing
+      - Coverage
+      - JEST
+      - Non regression
+      - Unitaire
+      - Integration
   - Solution Techniques
     - Le Back-End
       - La base donnée
+        - Forme normale
+          - 1NF
+          - 2NF
+          - 3NF
+          - 4NF
         - Conception
           - Dictionnaire de donnée
           - Merise
@@ -49,13 +77,15 @@
             - MLD
         - Sécurisation de la base de donnée
       - L'API
-        - Conception (Aucune expliquer pourquoi, les délais, la livraison)
+        - Conception (Aucune dédiée pourquoi, les délais, la livraison)
         - La sécurisation
-          - <a href='./func-spec.md#rbac'>RBAC</a>
           - Moindre privilège
           - Défense en profondeur
           - Réduction surface d'attaque
           - JWT (JSON Web Token)
+        - Testing
+          - Unitaire
+          - Non regression
       - Le Bot Onboarding
         - Conception
           - UML
