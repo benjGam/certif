@@ -1,6 +1,6 @@
 # Identification des technologies à utiliser
 
-Nous avons réalisé des études quant aux technologies adaptées à ce projet, nous avons donc établi des benchmarks.
+Nous avons réalisé des études quant aux technologies adaptées à ce projet, nous avons donc établi des tableaux comparatifs des différentes solutions.
 
 ## La base de données : PostgreSQL
 
@@ -19,8 +19,6 @@ C'est pour toutes ces raisons que PostgreSQL a été sélectionné comme solutio
 ## Choix du langage
 
 Dans une équipe réduite comme la notre, il nous fallait un langage relativement simple à prendre en main par tous les membres de l'équipe, assez léger pour être mis en place côté serveur sans nécessiter de coûts de machine trop élevés.
-
-C'est pourquoi notre choix s'est porté sur TypeScript.
 
 ### TypeScript
 
@@ -131,10 +129,6 @@ Notre équipe a décidé d'utiliser le framework Discord.js pour développer les
 | Prise Politique          | 1       | 0       |
 | License                  | Apache2 | MIT     |
 | Total                    | 20      | 18      |
-
-Expliquer pourquoi utiliser un ORM ?
-  - Sécurisation des requêtes via requêtes préparées
-  - Ajout d'abstraction dans le code
 
 Si l'on s'attarde sur le benchmark de l'ORM, on peut voir que TypeORM semblait être préféré à la place de Prisma. Cependant, notre équipe a dû choisir la solution la plus adaptée au projet, et il est apparu que, pour une équipe aussi réduite que la nôtre et dans les délais imposés, TypeORM semblait être trop lourd pour être intégré de manière optimisée au projet. C'est pourquoi, malgré l'analyse des caractéristiques de ces ORM, notre équipe a préféré utiliser Prisma plutôt que TypeORM.
 
