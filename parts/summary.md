@@ -48,13 +48,15 @@
       - <a href='./stack-choice.md#stateless'>Stateless</a>
       - <a href='./stack-choice.md#restful-api'>RESTful</a>
     - <a href='./stack-choice.md#analyse-du-framework-back-end-api'>Choix Framework Back API</a>
-      - Architecture MVC
     - <a href='./stack-choice.md#choix-du-framework-back-end-bot'>Choix Framework Back Bot</a>
     - <a href='./stack-choice.md#analyse-du-framework-front-end'>Choix Framework Front</a>
     - <a href='./stack-choice.md#analyse-de-lorm-object-relationnal-mapping'>Choix de l'ORM</a>
+      - <a href='./stack-choice.md#pourquoi-utiliser-un-orm'>Pourquoi utiliser un ORM ?</a>
+        - <a href='./stack-choice.md#la-sécurisation'>La sécurisation</a>
+        - <a href='./stack-choice.md#labstraction'>L'abstraction</a>
     - <a href='./stack-choice.md#tableau-récapitulatif'>Tableau Recapitulatif</a>
     - <a href='./stack-choice.md#seo'>SEO</a>
-    - <a href='./stack-choice.md#csr'>CSR</a>
+    - <a href='./stack-choice.md#csr'>CSR vs SSR</a>
     - Testing
       - Coverage
       - JEST
