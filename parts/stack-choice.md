@@ -4,25 +4,21 @@ Nous avons réalisé des études quant aux technologies adaptées à ce projet, 
 
 ## La base de données : PostgreSQL
 
-Il nous fallait un moyen de faire persister des données, donc une base de données. Cependant, il existe plusieurs types de bases de données :
+Dans le cadre de ce projet, il nous fallait une base de donnée afin de permettre la persistance des données, nous avons donc réalisés des études comparatives entre différents types de SGBD et avons selectionnés PostgreSQL
 
-- Relationnelles (SQL)
-- Non relationnelles (No SQL)
-  
+PG est un SGBDRO (Système de Gestion de Base de Donnée Relationnel et Objet) ce qui signifie que PostgreSQL prends en charge les bases de données relationnelles ainsi que des bases de données non relationnelles (NoSQL)
 
-! REMPLACER LE BORDEL EN DESSOUS PAR : Robuste, Scalable, PG permet de faire du NoSQL, Sécurisé
+De plus, PG robuste, il indique des performances satisfaisante en terme d'accès aux ressources de l'application.
+PG permet une approche scalable de la base de donneé et ainsi du projet.
 
-Nous avons réalisé des comparatifs quant aux différentes solutions disponibles pour faire persister nos données, et notre équipe a choisi PostgreSQL en guise de SGBD (Système de Gestion de Base de Données).
-
-En raison de l'utilisation de PostgreSQL dans de nombreux projets, nous avons déterminé que PG est fiable. De plus, PostgreSQL est performant, il est capable d'apporter des taux de performances satisfaisants dans des scénarios de grandes sollicitations de l'accès aux données.
-
+De plus PostgreSQL met en place des systèmes de sécurité interne et permet d'appliquer des sécurités supplémentaire sur certaines tables selon certains critères (Row-Level Security).
 PostgreSQL est open-source, ce qui en fait un SGBDRO flexible et adaptable aux besoins rencontrés pour le projet.
 
-C'est pour toutes ces raisons que PostgreSQL a été sélectionné pour la persistance de nos données.
+C'est pour toutes ces raisons que PostgreSQL a été sélectionné comme solution de persistance de nos données.
 
 ## Choix du langage
 
-Dans une équipe composée comme la nôtre et avec ces délais, il nous fallait un langage relativement simple à prendre en main par tous les membres de l'équipe, assez léger pour être mis en place côté serveur sans nécessiter de coûts de machine trop élevés.
+Dans une équipe réduite comme la notre, il nous fallait un langage relativement simple à prendre en main par tous les membres de l'équipe, assez léger pour être mis en place côté serveur sans nécessiter de coûts de machine trop élevés.
 
 C'est pourquoi notre choix s'est porté sur TypeScript.
 
@@ -30,11 +26,13 @@ C'est pourquoi notre choix s'est porté sur TypeScript.
 
 TypeScript est un langage plus robuste que JavaScript. Il s'agit d'un "superset" de JavaScript qui introduit de nombreux concepts que JavaScript vanilla n'implémente pas, tels que la POO (Programmation Orientée Objet).
 
-! TYPAGE FORT + ERREUR DE COMPIL PLUS CLAIRE
-
 Dans un projet de cette envergure, il est absolument nécessaire de pouvoir utiliser la Programmation Orientée Objet. Même si un bot peut sembler très basique de l'extérieur, à l'intérieur, c'est une autre affaire. Ce projet aurait pu être réalisé dans les délais avec du JavaScript vanilla, cependant, la maintenabilité du code aurait été quasiment impossible pour une équipe devant reprendre le projet.
 
-C'est pour ces raisons que TypeScript a été préféré à JavaScript. En termes de pérennité du projet, JavaScript n'était pas le choix adapté.
+TypeScript est un langage dit de "Typage Fort" qui ne permet pas l'assignation de valeur aux variables de façon dynamique, chaque variable à un type et il n'est pas possible de stocker n'importe quel type de donnée dans n'importe quelle variable.
+
+De plus, par le biais de son transpileur Typescript apporte une gestion des erreurs et un affichage de ces dernières bien moins verbeux et plus claire, ce qui permet de comprendre plus rapidement les erreurs de transpilation et ainsi de les règler plus vite.
+
+C'est pour ces raisons que TypeScript a été préféré à JavaScript. En terme de pérennité du projet, JavaScript n'était pas le choix adapté.
 
 ## API
 
@@ -50,11 +48,11 @@ Une API RESTful est une API qui respecte 5 principes fondamentaux de l'architect
 
 - Architecture client <-> serveur
 - Requête sans conservation d'état (stateless)
-- Cacheable : permettant de mettre en cache les ressources pour optimiser les performances
-- Interface uniforme : une interface uniforme qui permet la communication entre les composants du système (les composants peuvent interagir les uns avec les autres)
-- Construction en couches : les composants font partie de leur couche, ce qui permet d'étendre les composants et de les remplacer de manière sûre sans perte de performance.
+- Cacheable : Permettant de mettre en cache les ressources pour optimiser les performances
+- Interface uniforme : Une interface uniforme qui permet la communication entre les composants du système (les composants peuvent interagir les uns avec les autres)
+- Construction en couches : Permet de hierarchiser les différents composants de l'API
 
-Nous avons également choisi une architecture RESTful pour notre API, car il fallait qu'elle soit accessible par un large éventail de clients, et donc qu'elle fournisse des standards de réponses valides pour chaque client souhaitant la consommer.
+Nous avons également choisi une architecture RESTful pour notre API, car il fallait qu'elle soit accessible par un large éventail de clients, et donc qu'elle fournisse des réponses structurée de façon standardisée pour chaque client souhaitant la consommer.
 
 La mise en place d'une architecture RESTful semblait être la solution la plus adaptée dans le cadre de ce projet.
 
@@ -134,11 +132,21 @@ Notre équipe a décidé d'utiliser le framework Discord.js pour développer les
 | License                  | Apache2 | MIT     |
 | Total                    | 20      | 18      |
 
-Expliquer pour l'ORM ?
-
-- Sécurisation des requêtes via requêtes préparées
+Expliquer pourquoi utiliser un ORM ?
+  - Sécurisation des requêtes via requêtes préparées
+  - Ajout d'abstraction dans le code
 
 Si l'on s'attarde sur le benchmark de l'ORM, on peut voir que TypeORM semblait être préféré à la place de Prisma. Cependant, notre équipe a dû choisir la solution la plus adaptée au projet, et il est apparu que, pour une équipe aussi réduite que la nôtre et dans les délais imposés, TypeORM semblait être trop lourd pour être intégré de manière optimisée au projet. C'est pourquoi, malgré l'analyse des caractéristiques de ces ORM, notre équipe a préféré utiliser Prisma plutôt que TypeORM.
+
+#### Pourquoi utiliser un ORM ?
+
+##### La sécurisation
+
+En utilisant un ORM nous déleguons le travail de sécurisation de l'accès aux donnée à l'ORM qui va se charger d'executé des requêtes préparés permettant ainsi l'échappement des caractères et rendant de fait impossible l'exploitation d'une **Injection SQL**
+
+##### L'abstraction
+
+En effet, un ORM est très bon dans le domaine de l'abstraction, il permet d'éxecuter des requêtes SQL préparée (et donc sécurisée) de façon plus confortable pour les développeurs qui n'ont pas à écrire manuellement les requêtes à la main et qui peuvent simplement utiliser l'ORM dans le langage dans le quel ils developpent.
 
 ### Tableau récapitulatif 
 
@@ -173,11 +181,14 @@ Notre application Web, ayant pour but de gérer les différents bots depuis un p
 
 #### CSR vs SSR
 
-! Intro CSR vs SSR : Expliquer pourquoi CSR
+Le SSR est un mode de rendu des pages Web côté serveur, il est intéressant de mettre en place ce mode de rendu lorsque le référencement d'un site Web est nécessaire.
+Cependant, lorsqu'il n'est pas interessant d'améliorer son SEO, le SSR n'est pas recommandé car ce mode de rendu s'effectue côté serveur et donc consomme les ressources de ce dernier.
 
 Le CSR est un mode de rendu des pages Web côté client, c'est-à-dire que le rendu des pages Web est effectué côté client et non côté serveur, ce qui impacte directement les performances d'affichage d'une page Web selon la machine du client voulant la consulter. Il n'était pas utile de mettre en place un mode de rendu SSR dans le cadre de ce projet, car cela aurait nui aux performances du serveur qui aurait alors dû gérer le rendu des pages.
 
 Il était plus intéressant de laisser le rendu des pages Web au client plutôt qu'au serveur dans le cadre de ce projet.
+
+Note: Il n'existe plus de framework qui utilise pûrement l'un ou l'autre de ces modes de rendu, les frameworks utilisent un hybride en fonction des besoins de l'application.
 
 #### Hébergement
 
