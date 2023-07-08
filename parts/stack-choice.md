@@ -197,5 +197,27 @@ Nous avons choisi d'héberger l'application sur des serveurs dédiés internes �
 JEST est un framework Javascript permettant d'exécuter des tests unitaires pour des applications de tout type.
 Avec JEST il est facile d'écrire des tests et de les exécuter.
 
+#### TDD
+
+TDD signifie Test Driven Developpement, ce qui se traduit par "Le développement piloté par les tests".
+Le TDD est un concepte selon lequel un développeur décrit un test pour une fonction, lance ce test qui échoue FORCEMENT.
+Ensuite le développeur écrira la fonction à tester.
+
+De cette façon, une fonction sera écrite en fonction du test qu'elle doit passée et le développeur.
+
 #### Coverage
 
+Le Coverage est une métrique permettant de connaitre le taux de code exécuté lors des tests d'une application.
+Cette metrique permet de savoir à combien de pourcent le code est testé.
+
+#### Le test Unitaire
+
+Le test unitaire est un test réalisé sur une partie non divisible du code, un test unitaire est écrit pour tester une fonction du code, on décrit la valeur attendu à la sortie de la fonction et on vérifie si la donnée est bien celle attendu, le cas echéant, le test est un succès sinon le test échoue et le développeur modifie sa fonction tant que le test ne se solde pas par un succès.
+
+#### Le test d'intégration
+
+Le test d'intégration permet de tester l'intégration des composants au sein du code déjà existant, il assure que les composants individuelles s'intègre correctement au sein du code déjà existant sans que ce dernier n'est à subir de modification afin de permettre l'intégration du composant.
+
+### Conclusion du Testing
+
+Il était initialement prévu de développer en TDD et d'incorporer ces différents tests au sein de notre procéssus de développement, cependant notre organisation, ou désorganisation dans ce cas ne nous a pas permis de mettre en place de test unitaire de façon structurée.
