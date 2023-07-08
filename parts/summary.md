@@ -64,15 +64,16 @@
       - <a href='./stack-choice.md#le-test-dintégration'>Integration</a>
   - Solution Techniques
     - Le Back-End
-      - La base donnée
+      -  <a href='technical-solutions/backend/database.md'>La base donnée</a>
         - Conception
-          - Forme normale
-          - Dictionnaire de donnée
-          - Merise
-            - MCD
-            - MPD
-            - MLD
-        - Sécurisation de la base de donnée
+          - <a href='technical-solutions/backend/database.md#formes-normales'>Forme normales</a>
+          - <a href='technical-solutions/backend/database.md#dictionnaire-de-donnée'>Dictionnaire de donnée</a>
+          - <a href='technical-solutions/backend/database.md#merise'>Merise</a>
+            - <a href='technical-solutions/backend/database.md#les-cardinalités'>Les cardinalités</a>
+            - <a href='technical-solutions/backend/database.md#cif-ou-cim'>CIF et CIM</a>
+            - <a href='technical-solutions/backend/database.md#mcd-modèle-conceptuel-de-donnée'>MCD
+            - <a href='technical-solutions/backend/database.md#mpd-modèle-physique-de-donnée'>MPD</a>
+            - <a href='technical-solutions/backend/database.md#mld-modèle-logique-de-donnée'>MLD</a>
       - L'API
         - Conception (Aucune dédiée pourquoi, les délais, la livraison)
         - La sécurisation
@@ -90,5 +91,14 @@
             - Activités
             - Séquences
             - Classe
-          - Sécurisation
-            - JWT (JSON Web Token)
+      - Sécurisation du Back End
+        - Base de donnée
+          - Politique des mots de passes
+          - RGPD
+          - UUID
+          - SQLInjection
+            - ORM
+        - API
+          - RRL (Request Rate Limit)
+          - Token
+          - JWT
