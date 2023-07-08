@@ -1,4 +1,4 @@
-- Résumé
+- <a href='./resume.md'>Résumé</a>
 - <a href='./self-pres.md'>Présentation Personnelle</a>
 - <a href='./project-pres.md'>Présentation du Client</a>
   - <a href='./project-pres.md#context'>Contextualisation du projet</a>
@@ -58,19 +58,15 @@
     - <a href='./stack-choice.md#seo'>SEO</a>
     - <a href='./stack-choice.md#csr'>CSR vs SSR</a>
     - Testing
-      - JEST
-      - Coverage
-      - Non regression
-      - Unitaire
-      - Integration
+      - <a href='./stack-choice.md#jest'>JEST</a>
+      - <a href='./stack-choice.md#coverage'>Coverage</a>
+      - <a href='./stack-choice.md#le-test-unitaire'>Unitaire</a>
+      - <a href='./stack-choice.md#le-test-dintégration'>Integration</a>
   - Solution Techniques
     - Le Back-End
       - La base donnée
         - Conception
           - Forme normale
-          - 1NF
-          - 2NF
-          - 3NF
           - Dictionnaire de donnée
           - Merise
             - MCD
