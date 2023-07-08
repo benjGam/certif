@@ -71,19 +71,38 @@
           - <a href='technical-solutions/backend/database.md#merise'>Merise</a>
             - <a href='technical-solutions/backend/database.md#les-cardinalités'>Les cardinalités</a>
             - <a href='technical-solutions/backend/database.md#cif-ou-cim'>CIF et CIM</a>
-            - <a href='technical-solutions/backend/database.md#mcd-modèle-conceptuel-de-donnée'>MCD
+            - <a href='technical-solutions/backend/database.md#mcd-modèle-conceptuel-de-donnée'>MCD</a>
             - <a href='technical-solutions/backend/database.md#mpd-modèle-physique-de-donnée'>MPD</a>
             - <a href='technical-solutions/backend/database.md#mld-modèle-logique-de-donnée'>MLD</a>
       - L'API
-        - Conception (Aucune dédiée pourquoi, les délais, la livraison)
-        - La sécurisation
-          - Moindre privilège
-          - Défense en profondeur
-          - Réduction surface d'attaque
-          - JWT (JSON Web Token)
+        - <a href='technical-solutions/backend/api.md#conception'>Conception</a>
+        - <a href='technical-solutions/backend/api.md#crud-create-read-update-delete'>Le CRUD</a>
+        - <a href='technical-solutions/backend/api.md#nestjs--express'>NestJS & Express</a>
+        - <a href='technical-solutions/backend/api.md#architecture-de-lapi--nestjs'>Architecture du projet</a>
+        - Démonstration de code
+          - <a href='technical-solutions/backend/api.md#le-module--user'>Le module User</a>
+            - <a href='technical-solutions/backend/api.md#la-clé-controllers'>La clé : Controllers</a>
+            - <a href='technical-solutions/backend/api.md#la-clé-providers'>La clé : Providers</a>
+            - <a href='technical-solutions/backend/api.md#conclusion-module'>Conclusion</a>
+          - <a href='technical-solutions/backend/api.md#le-controlleur--user'>Le controlleur User</a>
+            - <a href='technical-solutions/backend/api.md#conventions-décriture-des-controlleurs'>Convention d'écriture des controlleurs</a>
+            - <a href='technical-solutions/backend/api.md#contenu-des-controlleurs'>Contenu des controlleurs</a>
+              - <a href='technical-solutions/backend/api.md#le-bloc-try-catch'>Le bloc Try Catch</a>
+              - <a href='technical-solutions/backend/api.md#appelle-à-la-fonction-de-normalisation-des-réponses'>Appelle à la fonction de normalisation des réponses</a>
+            - <a href='technical-solutions/backend/api.md#la-route-post'>La route POST</a>
+            - <a href='technical-solutions/backend/api.md#la-route-get'>La route GET</a>
+            - <a href='technical-solutions/backend/api.md#les-routes-delete--patch'>Les routes DELETE & PATCH</a>
+          - <a href='technical-solutions/backend/api.md#les-services'>Les services NestJS</a>
+          - <a href='technical-solutions/backend/api.md#le-service--user'>Le service User</a>
+            - <a href='technical-solutions/backend/api.md#méthode-denregistrement'>Méthode d'enregistrement</a>
+            - <a href='technical-solutions/backend/api.md#méthode-de-récupération-par-uuid'>Méthode de récupération par UUID</a>
+            - <a href='technical-solutions/backend/api.md#methode-de-suppression--methode-de-mise-à-jour'>Methode de suppression & Methode de mise à jour</a>
+            - <a href='technical-solutions/backend/api.md#thisincludedvalues'>This.includedValues() ?</a>
+            - <a href='technical-solutions/backend/api.md#dto'>DTO ?</a>
+        - <a href='technical-solutions/backend/api.md#swagger'>Swagger</a>
         - Testing
           - Unitaire
-          - Non regression
+          - Intégration
       - Le Bot Onboarding
         - Conception
           - UML
@@ -92,6 +111,9 @@
             - Séquences
             - Classe
       - Sécurisation du Back End
+          - Moindre privilège
+          - Défense en profondeur
+          - Réduction surface d'attaque
         - Base de donnée
           - Politique des mots de passes
           - RGPD
@@ -100,5 +122,4 @@
             - ORM
         - API
           - RRL (Request Rate Limit)
-          - Token
-          - JWT
+          - JWT (JSON Web Token)
