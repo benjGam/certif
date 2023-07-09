@@ -127,11 +127,11 @@
           - Intégration
       - Le Bot Onboarding
         - Conception
-          - UML
-            - Use case
-            - Activités
-            - Séquences
-            - Classe
+          - <a href='./technical-solutions/backend/onboarding.md#uml-unified-modeling-language'>UML</a>
+            - <a href='./technical-solutions/backend/onboarding.md#use-case-diagramme-de-cas-dutilisation--zoom-x1'>Use case</a>
+            - <a href='./technical-solutions/backend/onboarding.md#activity-diagram-diagramme-dactivités--zoom-x2'>Activités</a>
+            - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-séquence--zoom-x3'>Séquences</a>
+            - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-classe--zoom-x4'>Classe</a>
       - Déploiement
         - Docker
         - GitHub Actions
