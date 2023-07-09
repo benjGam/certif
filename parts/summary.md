@@ -63,12 +63,34 @@
       - <a href='./stack-choice.md#le-test-unitaire'>Unitaire</a>
       - <a href='./stack-choice.md#le-test-dintégration'>Integration</a>
   - Solution Techniques
+    - Sécurisation de l'application
+      - Menaces les plus répandues
+        - <a href='./technical-solutions/security.md#xss'>XSS</a>
+        - <a href='./technical-solutions/security.md#csrf'>CSRF</a>
+        - <a href='./technical-solutions/security.md#ddos-distributed-denial-of-service--attaque-par-déni-de-service'>DDos</a>
+      - Back End
+        - API
+          - <a href='./technical-solutions/backend/security.md#moindre-privilège'>Moindre privilège</a>
+          - <a href='./technical-solutions/backend/security.md#défense-en-profondeur'>Défense en profondeur</a>
+          - <a href='./technical-solutions/backend/security.md#réduction-de-la-surface-dattaque'>Réduction surface d'attaque</a>
+          - <a href='./technical-solutions/backend/security.md#cors'>CORS</a>
+          - RRL (Request Rate Limit)
+      - Base de donnée
+        - <a href='./technical-solutions/backend/security.md#politique-des-mots-de-passe'>Politique des mots de passes</a>
+          - <a href='./technical-solutions/backend/security.md#chiffrement--sha-256'>Chiffrement : SHA256</a>
+        - <a href='./technical-solutions/backend/security.md#rgpd-règlement-général-sur-la-protection-des-données'>RGPD</a>
+        - <a href='./technical-solutions/backend/security.md#uuid-universally-unique-identifiers'>UUID</a>
+        - <a href='./technical-solutions/backend/security.md#sqlinjection'>SQLInjection
+          - <a href='./technical-solutions/backend/security.md#orm'>ORM</a>
+      - Front
+        - <a href='./technical-solutions/security.md#csp'>CSP</a>
+        - <a href='./technical-solutions/security.md#sanitisation'>Sanitisation</a>
     - Le Back-End
       -  <a href='technical-solutions/backend/database.md'>La base donnée</a>
         - Conception
           - <a href='technical-solutions/backend/database.md#formes-normales'>Forme normales</a>
           - <a href='technical-solutions/backend/database.md#dictionnaire-de-donnée'>Dictionnaire de donnée</a>
-          - <a href='technical-solutions/backend/database.md#merise'>Merise</a>
+          - <a href='technical-solutions/backend/database.md#merise'>Merise (Méthode d'étude et de réalisation informatique pour les systèmes d'entreprise)</a>
             - <a href='technical-solutions/backend/database.md#les-cardinalités'>Les cardinalités</a>
             - <a href='technical-solutions/backend/database.md#cif-ou-cim'>CIF et CIM</a>
             - <a href='technical-solutions/backend/database.md#mcd-modèle-conceptuel-de-donnée'>MCD</a>
@@ -110,16 +132,7 @@
             - Activités
             - Séquences
             - Classe
-      - Sécurisation du Back End
-          - Moindre privilège
-          - Défense en profondeur
-          - Réduction surface d'attaque
-        - Base de donnée
-          - Politique des mots de passes
-          - RGPD
-          - UUID
-          - SQLInjection
-            - ORM
-        - API
-          - RRL (Request Rate Limit)
-          - JWT (JSON Web Token)
+      - Déploiement
+        - Docker
+        - GitHub Actions
+        - Pipeline : CI / CD
