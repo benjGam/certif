@@ -8,9 +8,13 @@ Pour la conception de notre base de donnée, nous avons utilisé l'outil JMerise
 
 Les formes Normales sont une liste de critères qu'une base de donnée doit remplir afin d'être considéré comme performantes voici la liste des formes normales que notre base de donnée respectent : 
 
-- 1NF : Clé primaire (pas de tuples en doublon)
-- 2NF : Valeurs atomiques (une cellule ne peut pas avoir un table comme valeur)
-- 3NF : Chaque dépendance fonctionnelle non-triviale, soit ne commence pas avec un sous-ensemble strict de clés, ou alors termine avec un attribut premier. (Chaque colonne d'une table dépend uniquement de la clé principale (PK) de cette table)
+- 1NF : Clé primaire (Pas de doublon)
+- 2NF : Valeurs atomiques (Chaque cellule qui compose une table est une unité indivisible)
+  Exemple : Une adresse est divisible par un numéro, un nom de rue, une ville et un code postale.
+  Pour respecter la 2ème forme normale, on créer une table adresse qui décompose ces différents champs.
+- 3NF : (Les champs d'une table correspondent à une seule et unique clé primaire)
+  Exemple :
+  Les champs : Numéro de Commande, Adresse de livraison, Client, Produit dans une table Commande sont uniquement dépendant de la clé primaire "Numéro de Commande"
 
 ### Dictionnaire de donnée
 

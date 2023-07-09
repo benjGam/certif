@@ -43,24 +43,24 @@ Chaque module NestJS sera donc séparé de la même façon, cela permet de sépa
 
 ## Le module : User
 
-Les modules NestJS permette de définir les spécifications pour le ce module.
+Les modules NestJS permette de définir les spécifications pour ce module.
 
 ![](imgs/module.png)
 
 On peut voir un décorateur Nest intitulé "Module" qui abstrait une grande quantité de code pour le développeur et qui est laissé à NestJS
 Dans l'objet envoyé au décorateur, on peu observer certaines clés.
 
-### La clé Controllers
+### La propriété Controllers
 
 La clé controllers envoyé au décorateur est un taleau de type Type.
 Avec la clé controllers, le développeur définit le (ou LES) controlleur(s) du module, de plus, le fait que cette clé soit un tableau de Type et non juste un Type permet de définir plusieurs controller pour un même module, et donc permet sur des projets de grande envergure de séparer les routes en fonctions de leur champ d'action, ce qui apporte une certaine clareté dans les fichiers de code.
 
-### La clé Providers
+### La propriété Providers
 
 La clé providers quant à elle permet de définir les Providers du module, c'est à dire, les classes dont ce module (Ou le module l'important) utilise.
 Provider signifie Fournisseur, on peut en comprendre que les Providers NestJS sont donc des fournisseurs de code.
 
-## Conclusion module
+## Autre propriétés du module
 
 Il existe d'autre clés pour les modules, cependant nous n'en avons pas besoin dans notre cas.
 
@@ -119,7 +119,7 @@ Le contenu de chaque méthode contient :
 J'ai utilisé des Blocs Try Catch dans chaque controlleur pour permettre à l'éxecution de ne pas s'arrêter en cas d'erreur non gérée ou gérée, je m'explique.
 La logique de chaque route peut renvoyer une erreur déclenchée volontairement afin de mettre fin au fil d'éxecution, pour l'instant, cela peut semler stupide, cependant nous verrons plus tard pourquoi j'ai designé les controlleurs de cette façon.
 
-Amélioration : Globaliser les blocs de try catch au sein d'un middleware pour eliminer cette invasion.
+Amélioration à apporter : Globaliser les blocs de try catch au sein d'un middleware pour eliminer cette invasion.
 
 #### Appelle à la fonction de normalisation des réponses
 

@@ -121,6 +121,8 @@ Notons aussi que si une version mineure est publiée, les versions patch du code
 
 Grâce au versionning, il est possible de structurer les différentes versions du code et d'apporter des informations claires et détaillées quant aux modifications que le code a subies.
 
+Nous avions prévu de mettre en place le semantic version cependant nous n'avons pas eu le temps de nous en préoccuper.
+
 ![](../imgs/versionning.png)
 
 ### Git
