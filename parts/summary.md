@@ -1,0 +1,138 @@
+- <a href='./resume.md'>Résumé</a>
+- <a href='./self-pres.md'>Présentation Personnelle</a>
+- <a href='./project-pres.md'>Présentation du Client</a>
+  - <a href='./project-pres.md#context'>Contextualisation du projet</a>
+    - <a href='./project-pres#client'>Récolte du besoin client</a>
+      - <a href='./project-pres.md#team'>L'équipe en charge</a>
+      - <a href='./project-pres.md#proposition-de-solution--discord-vs-from-sratch'>Proposition de solution</a>
+- <a href='./project-management.md'>Gestion du projet</a>
+  - <a href='./project-management.md#méthodologie-de-travail--agile'>Methodologie de travail : Agile
+      - <a href='./project-management.md#scrum'>SCRUM</a>
+        - Les 4 valeurs
+          - <a href='./project-management.md#individus--interaction--processus--outils'>Individus & Interaction > Processus & Outils</a>
+          - <a href='./project-management.md#un-produit-fonctionnel--une-documentation-exhaustive'>Un produit fonctionnel > Une documentation exhaustive</a>
+          - <a href='./project-management.md#collaboration-avec-le-client--negociation-contractuelle'>Collaboration avec le client > Negociation contractuelle</a>
+          - <a href='./project-management.md#adaptation-au-changement--suivi-dun-plan'>Adaptation au changement > Suivi d'un plan</a>
+        - Les rôles
+          - <a href='./project-management.md#product-owner'>Le Product Owner</a>
+          - <a href='./project-management.md#le-scrum-master'>Le Scrum Master</a>
+          - <a href='./project-management.md#léquipe-de-développement'>L'équipe de développement</a>
+        - Les rituels
+          - <a href='./project-management.md#sprint-planning'>Sprint Planning</a>
+          - <a href='./project-management.md#daily-scrum'>Daily Scrum</a>
+          - <a href='./project-management.md#sprint-review'>Sprint Review</a>
+          - <a href='./project-management.md#sprint-retrospective'>Sprint Retrospective</a>
+      - <a href='./project-management.md#définition-des-rôles'>Définition des rôles</a>
+      - <a href='./project-management.md#jira'>Jira</a>
+    - <a href='./project-management.md#versionning'>Versionning</a>
+      - <a href='./project-management.md#git'>Git</a>
+        - <a href='./project-management.md#gitflow'>GitFlow</a>
+      - <a href='./project-management.md#github'>GitHub</a>
+        - <a href='./project-management.md#mono-repository-vs-multi-repository'>Choix de l'architecture du projet</a>
+        - <a href='./project-management.md#gitflow-vs-fork'>GitFlow VS Fork</a>
+        - <a href='./project-management.md#convention-de-formatage-des-commits'>Conventions de formattage des commits (Angular Style)</a>
+        - <a href='./project-management.md#critères-des-pull-requests'>Critères des pulls requests</a>
+        - <a href='./project-management.md#github-actions'>GitHub Actions (Explication brève)</a>
+    - <a href='./project-management.md#qualité-de-code--eslint'>Objectif de qualité de code : ESLint</a>
+      - <a href='./project-management.md#la-convention-airbnb'>Convention AirBnb</a>
+- Spécification fonctionnelles
+  - <a href='./gestion-rules.md'>Règles de gestion</a>
+  - <a href='./rbac.md'>RBAC</a>
+  - <a href='./user-stories.md'>Listing des User Storys les plus représentatives du projet</a>
+- Spécification Technique
+  - <a href='./stack-choice.md'>Choix de la stack</a>
+    - <a href='./stack-choice.md#la-base-de-données--postgresql'>Base de donnée</a>
+    - <a href='./stack-choice.md#choix-du-langage'>Choix du langage</a>
+      - <a href='./stack-choice.md#typescript'>Typescript</a>
+    - <a href='./stack-choice.md#api'>API</a>
+      - <a href='./stack-choice.md#stateless'>Stateless</a>
+      - <a href='./stack-choice.md#restful-api'>RESTful</a>
+    - <a href='./stack-choice.md#analyse-du-framework-back-end-api'>Choix Framework Back API</a>
+    - <a href='./stack-choice.md#choix-du-framework-back-end-bot'>Choix Framework Back Bot</a>
+    - <a href='./stack-choice.md#analyse-du-framework-front-end'>Choix Framework Front</a>
+    - <a href='./stack-choice.md#analyse-de-lorm-object-relationnal-mapping'>Choix de l'ORM</a>
+      - <a href='./stack-choice.md#pourquoi-utiliser-un-orm'>Pourquoi utiliser un ORM ?</a>
+        - <a href='./stack-choice.md#la-sécurisation'>La sécurisation</a>
+        - <a href='./stack-choice.md#labstraction'>L'abstraction</a>
+    - <a href='./stack-choice.md#tableau-récapitulatif'>Tableau Recapitulatif</a>
+    - <a href='./stack-choice.md#seo'>SEO</a>
+    - <a href='./stack-choice.md#csr'>CSR vs SSR</a>
+    - Testing
+      - <a href='./stack-choice.md#jest'>JEST</a>
+      - <a href='./stack-choice.md#coverage'>Coverage</a>
+      - <a href='./stack-choice.md#le-test-unitaire'>Unitaire</a>
+      - <a href='./stack-choice.md#le-test-dintégration'>Integration</a>
+  - Solution Techniques
+    - Sécurisation de l'application
+      - Menaces les plus répandues
+        - <a href='./technical-solutions/security.md#xss'>XSS</a>
+        - <a href='./technical-solutions/security.md#csrf'>CSRF</a>
+        - <a href='./technical-solutions/security.md#ddos-distributed-denial-of-service--attaque-par-déni-de-service'>DDos</a>
+      - Back End
+        - API
+          - <a href='./technical-solutions/backend/security.md#moindre-privilège'>Moindre privilège</a>
+          - <a href='./technical-solutions/backend/security.md#défense-en-profondeur'>Défense en profondeur</a>
+          - <a href='./technical-solutions/backend/security.md#réduction-de-la-surface-dattaque'>Réduction surface d'attaque</a>
+          - <a href='./technical-solutions/backend/security.md#cors'>CORS</a>
+          - RRL (Request Rate Limit)
+      - Base de donnée
+        - <a href='./technical-solutions/backend/security.md#politique-des-mots-de-passe'>Politique des mots de passes</a>
+          - <a href='./technical-solutions/backend/security.md#chiffrement--sha-256'>Chiffrement : SHA256</a>
+        - <a href='./technical-solutions/backend/security.md#rgpd-règlement-général-sur-la-protection-des-données'>RGPD</a>
+        - <a href='./technical-solutions/backend/security.md#uuid-universally-unique-identifiers'>UUID</a>
+        - <a href='./technical-solutions/backend/security.md#sqlinjection'>SQLInjection
+          - <a href='./technical-solutions/backend/security.md#orm'>ORM</a>
+      - Front
+        - <a href='./technical-solutions/security.md#csp'>CSP</a>
+        - <a href='./technical-solutions/security.md#sanitisation'>Sanitisation</a>
+    - Le Back-End
+      -  <a href='technical-solutions/backend/database.md'>La base donnée</a>
+        - Conception
+          - <a href='technical-solutions/backend/database.md#formes-normales'>Forme normales</a>
+          - <a href='technical-solutions/backend/database.md#dictionnaire-de-donnée'>Dictionnaire de donnée</a>
+          - <a href='technical-solutions/backend/database.md#merise'>Merise (Méthode d'étude et de réalisation informatique pour les systèmes d'entreprise)</a>
+            - <a href='technical-solutions/backend/database.md#les-cardinalités'>Les cardinalités</a>
+            - <a href='technical-solutions/backend/database.md#cif-ou-cim'>CIF et CIM</a>
+            - <a href='technical-solutions/backend/database.md#mcd-modèle-conceptuel-de-donnée'>MCD</a>
+            - <a href='technical-solutions/backend/database.md#mpd-modèle-physique-de-donnée'>MPD</a>
+            - <a href='technical-solutions/backend/database.md#mld-modèle-logique-de-donnée'>MLD</a>
+      - L'API
+        - <a href='technical-solutions/backend/api.md#conception'>Conception</a>
+        - <a href='technical-solutions/backend/api.md#crud-create-read-update-delete'>Le CRUD</a>
+        - <a href='technical-solutions/backend/api.md#nestjs--express'>NestJS & Express</a>
+        - <a href='technical-solutions/backend/api.md#architecture-de-lapi--nestjs'>Architecture du projet</a>
+        - Démonstration de code
+          - <a href='technical-solutions/backend/api.md#le-module--user'>Le module User</a>
+            - <a href='technical-solutions/backend/api.md#la-clé-controllers'>La clé : Controllers</a>
+            - <a href='technical-solutions/backend/api.md#la-clé-providers'>La clé : Providers</a>
+            - <a href='technical-solutions/backend/api.md#conclusion-module'>Conclusion</a>
+          - <a href='technical-solutions/backend/api.md#le-controlleur--user'>Le controlleur User</a>
+            - <a href='technical-solutions/backend/api.md#conventions-décriture-des-controlleurs'>Convention d'écriture des controlleurs</a>
+            - <a href='technical-solutions/backend/api.md#contenu-des-controlleurs'>Contenu des controlleurs</a>
+              - <a href='technical-solutions/backend/api.md#le-bloc-try-catch'>Le bloc Try Catch</a>
+              - <a href='technical-solutions/backend/api.md#appelle-à-la-fonction-de-normalisation-des-réponses'>Appelle à la fonction de normalisation des réponses</a>
+            - <a href='technical-solutions/backend/api.md#la-route-post'>La route POST</a>
+            - <a href='technical-solutions/backend/api.md#la-route-get'>La route GET</a>
+            - <a href='technical-solutions/backend/api.md#les-routes-delete--patch'>Les routes DELETE & PATCH</a>
+          - <a href='technical-solutions/backend/api.md#les-services'>Les services NestJS</a>
+          - <a href='technical-solutions/backend/api.md#le-service--user'>Le service User</a>
+            - <a href='technical-solutions/backend/api.md#méthode-denregistrement'>Méthode d'enregistrement</a>
+            - <a href='technical-solutions/backend/api.md#méthode-de-récupération-par-uuid'>Méthode de récupération par UUID</a>
+            - <a href='technical-solutions/backend/api.md#methode-de-suppression--methode-de-mise-à-jour'>Methode de suppression & Methode de mise à jour</a>
+            - <a href='technical-solutions/backend/api.md#thisincludedvalues'>This.includedValues() ?</a>
+            - <a href='technical-solutions/backend/api.md#dto'>DTO ?</a>
+        - <a href='technical-solutions/backend/api.md#swagger'>Swagger</a>
+        - Testing
+          - Unitaire
+          - Intégration
+      - Le Bot Onboarding
+        - Conception
+          - <a href='./technical-solutions/backend/onboarding.md#uml-unified-modeling-language'>UML</a>
+            - <a href='./technical-solutions/backend/onboarding.md#use-case-diagramme-de-cas-dutilisation--zoom-x1'>Use case</a>
+            - <a href='./technical-solutions/backend/onboarding.md#activity-diagram-diagramme-dactivités--zoom-x2'>Activités</a>
+            - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-séquence--zoom-x3'>Séquences</a>
+            - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-classe--zoom-x4'>Classe</a>
+      - Déploiement
+        - Docker
+        - GitHub Actions
+        - Pipeline : CI / CD
