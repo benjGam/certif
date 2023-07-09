@@ -133,6 +133,6 @@
             - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-séquence--zoom-x3'>Séquences</a>
             - <a href='./technical-solutions/backend/onboarding.md#diagramme-de-classe--zoom-x4'>Classe</a>
       - Déploiement
-        - Docker
-        - GitHub Actions
-        - Pipeline : CI / CD
+        - <a href='./technical-solutions/deploy.md#docker'>Docker</a>
+        - <a href='./technical-solutions/deploy.md#github-actions'>GitHub Actions</a>
+          - <a href='./technical-solutions/deploy.md#la-pipeline-ci--cd-continueous-integration--continueous-deployement-de-lapi'>Pipeline : CI / CD</a>
