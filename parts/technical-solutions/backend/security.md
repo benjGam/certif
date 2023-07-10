@@ -63,21 +63,20 @@ Dans le cadre de cette strategie, la politique des mots de passes sera la suivan
 - Un temps d'attente de 2 minutes par tranche de 3 tentatives de connexions échouées.
 - Une stratégie de recouvrement par le biais d'un lien envoyé par mail afin de regénérer un mot de passe.
 
-#### Chiffrement : SHA 256
+#### Chiffrement : BCrypt
 
 Un algoritme de chiffrement est utile lorsque l'on veut qu'une information ne soit pas découverte
 on insère alors cette information dans un algoritme de chiffrement afin que cette information ne soit plus compréhensible en l'état.
 
-Dans le cadre de ce projet, l'algoritme de chiffrement retenu pour chiffrer les mots de passes des utilisateurs sera le SHA256.
+Dans le cadre de ce projet, l'algoritme de chiffrement retenu pour chiffrer les mots de passes des utilisateurs sera BCrypt.
 
-Il était initalement prévu d'utiliser l'outil BCrypt afin de chiffrer les informations de connexion des utilisateurs au Dashboard Web, cependant nous n'avons pas eu le temps de mettre en place ce système de connexion.
+Il était initalement prévu d'utiliser le module BCrypt afin de chiffrer les informations de connexion des utilisateurs au Dashboard Web, cependant nous n'avons pas eu le temps de mettre en place ce système de connexion.
 
 ##### Hashage
 
-Le SHA256 est un algoritme de chiffrement dit de "Hashage", lorsque l'on parle de hashage
+BCrypt est un algoritme de chiffrement dit de "Hashage", lorsque l'on parle de hashage
 on parle de méthodologie de chiffrement découpant l'information en une quantité de tronçons de même taille
-chaque tronçon aura une influence sur le prochain tronçon jusqu'à ce qu'il n'y est plus de tronçon influençable
-aussi, une information hashé par un algoritme tel que SHA256 aura toujours un ordre de taille donné : (32 bytes / octets) et (64 bytes / octets) en hexadécimal.
+BCrypt utilise un système de coût (qui n'est ni plus ni moins que le nombre de fois que l'opération de hashage sera effectué sur l'information)
 
 Cependant, le hashage en lui même ne représente pas une sécurité suffisante en elle-même
 puis-ce qu'un algoritme de chiffrement est une simple opération mathématique applicable en fonction de certains facteur.

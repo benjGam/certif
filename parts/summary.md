@@ -63,7 +63,7 @@
       - <a href='./stack-choice.md#le-test-unitaire'>Unitaire</a>
       - <a href='./stack-choice.md#le-test-dintégration'>Integration</a>
   - Solution Techniques
-    - Sécurisation de l'application
+    - Sécurisation de l'application /!\ A ORIENTER VERS : COMMENT J'M'Y PRENDRAI
       - Menaces les plus répandues
         - <a href='./technical-solutions/security.md#xss'>XSS</a>
         - <a href='./technical-solutions/security.md#csrf'>CSRF</a>

@@ -91,7 +91,7 @@ Les membres ont également signalé des problèmes de sourcing. Selon eux, il es
 
 **LEROY Cédric** alias l'encyclopédie / rédacteur en chef
 
-**GAMACHE Benjamin** aka moi-même
+**GAMACHE Benjamin** votre rédacteur
 
 ## Proposition de solution : Discord vs. From Sratch
 
